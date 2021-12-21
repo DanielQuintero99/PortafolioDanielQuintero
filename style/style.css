@@ -511,7 +511,7 @@ footer {
 
     }
     .mainTittleAbout {
-        width: 225px;
+        width: 280px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 800;
@@ -522,7 +522,7 @@ footer {
         margin-left: 0px;
     }
     .mainTittleProjects{
-        width: 225px;
+        width: 280px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 800;
@@ -532,7 +532,8 @@ footer {
         margin-left: 0px;
     }
     .mainSubtittle {
-        width: 180px;
+        width: 260px;
+        background-color: #ff0000;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
@@ -542,7 +543,7 @@ footer {
     }
 
     .mainSubtittleAbout {
-        width: 180px;
+        width: 260px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
@@ -551,7 +552,7 @@ footer {
         margin-left: 0px;
     }
     .mainSubtittleProjects{
-        width: 201px;
+        width: 260px;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
