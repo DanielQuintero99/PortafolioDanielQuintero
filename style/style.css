@@ -279,9 +279,7 @@ footer {
     justify-content: space-around;
 }
 
-.borderHomeMobile {
-    display: none;
-}
+
 .borderAboutMobile {
     display: none;
 }
@@ -309,17 +307,7 @@ footer {
 
 }
 
-.borderHome {
-    z-index: 20;
-    display: grid;
-    grid-template-columns: 1fr;
-    background-position-x: 95px;
-    border: 1px solid;
-    border-image: linear-gradient(to bottom, rgba(254, 254, 254, 1) 0%, rgba(254, 254, 254, 0) 100%) 1;
-    justify-items: center;
-    align-items: center;
-    padding: 40px 60px 10px 60px;
-}
+
 .borderAbout{
     z-index: 20;
     display: grid;
@@ -342,15 +330,59 @@ footer {
     align-items: center;
 
 }
+.mydiv {
+	display: flex;
+	position: relative;
+	margin: 10% auto 0;
+	width: 450px;
+	height: 714px;
+	background-image: url(../Images/hero-image.png);
+	background-size:cover;
+	background-repeat: no-repeat; 
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+}
+
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -3px;
+    top: -3px;
+    background: linear-gradient(120deg, black, white,gray );
+	background-size: 300%;
+	width: calc(100% + 6px);
+	height: calc(100% + 3px);
+	z-index: -1;
+	animation: BGgradient 10s infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+    filter: blur(15px);
+} 
+
 .socialMedia {
     z-index: 30;
     width: 177px;
     height: 59px;
     display: flex;
-    margin-left: 55%;
-    margin-top: -120px;
-}
+	padding-bottom: 50px;
+	padding-right: 30px;
 
+}
 .git {
     background-image: url(../social-media/bxl-github.svg);
     background-repeat: no-repeat;
@@ -374,6 +406,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .luzHome:hover{
     color: #FEFEFE;
 }
@@ -433,7 +466,7 @@ footer {
 
     footer {
         display: grid;
-        z-index: 20;
+        z-index: -4;
         width: 100%;
         grid-column: 1/2;
         grid-row: 3/4;
@@ -638,14 +671,9 @@ footer {
 
     }
 
-    .borderHomeMobile {
-        z-index: 100;
-        margin-top: 10%;
-        z-index: 10;
-        display: grid;
-        grid-template-columns: 1fr;
-        border: 1px solid;
-        border-image: linear-gradient(to bottom, rgba(254, 254, 254, 1) 0%, rgba(254, 254, 254, 0) 100%) 1;
+    .mydiv{
+        width: 274px;
+        height: 359px;
     }
     .borderAboutMobile{
         z-index: 100;
@@ -664,9 +692,7 @@ footer {
         border: 1px solid;
         border-image: linear-gradient(to bottom, rgb(255, 251, 0) 0%, rgba(254, 254, 254, 0) 100%) 1;
     }
-    .borderHome {
-        display: none;
-    }
+
     .borderAbout{
         display: none;
     }
@@ -678,7 +704,9 @@ footer {
         margin-bottom: 5%;
         align-items: flex-end;
         display: flex;
-        margin-left: 5%;
+        width: 114px;
+        padding-bottom: 0px;
+        padding-right: 137px;
     }
 
     .git {
@@ -751,8 +779,9 @@ footer {
     .mainSubtittleProjects{
         margin-left: 0px;
     }
-    .borderHome {
-        width: 350px;
+    .mydiv{
+        width: 340px;
+        height: 607px;
     }
     .borderAbout{
         width: 350px;
@@ -768,8 +797,8 @@ footer {
         width: 177px;
         height: 59px;
         display: flex;
-        margin-left: 45%;
-        margin-top: 0px;
+        padding-bottom: 114px;
+        padding-right: 30px;
     }
 }
 
@@ -823,17 +852,9 @@ footer {
     .ListProjects{
         margin-left: 270px;
     }
-    .borderHome {
-        z-index: 20;
-        display: grid;
-        grid-template-columns: 1fr;
-        background-position-x: 95px;
-        border: 1px solid;
-        border-image: linear-gradient(to bottom, rgba(254, 254, 254, 1) 0%, rgba(254, 254, 254, 0) 100%) 1;
-        justify-items: center;
-        align-items: center;
-        padding: 40px 60px 10px 60px;
+    .mydiv{
         width: 450px;
+        height: 714px
     }
     .borderAbout{
         z-index: 20;
@@ -864,8 +885,7 @@ footer {
         width: 177px;
         height: 59px;
         display: flex;
-        margin-left: 55%;
-        margin-top: -140px;
+        padding-right: 200px;
     }
 
     .buton {
