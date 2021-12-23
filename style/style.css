@@ -123,6 +123,15 @@ footer {
     background-position: center;
     margin-right: 2%;
 }
+.logoEducation{
+    width: 36px;
+    height: 33px;
+    background-image: url(../logos-y-nav/logoblue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2%;
+}
 .navRigth {
     display: grid;
     grid-column: 2/3;
@@ -183,6 +192,15 @@ footer {
     height: 11px;
     line-height: 65px;
 }
+.mainTittleEducation{
+    color: #001EBA;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    height: 11px;
+    line-height: 65px;
+}
 .mainSubtittle {
     width: 254px;
     height: 20px;
@@ -214,6 +232,16 @@ footer {
     font-size: 20px;
     margin-left: 121px;
 }
+.mainSubtittleEducation {
+    width: 254px;
+    height: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #00b7ff;
+    margin-left: 121px;
+}
 .mainText {
     margin-left: 121px;
     font-family: Poppins;
@@ -238,6 +266,17 @@ footer {
 }
 .mainTextProjects{
     color: #ff8800;
+    margin-left: 121px;
+    font-family: Poppins;
+    line-height: 29px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    width: 460px;
+    text-align: justify;
+}
+.mainTextEducation{
+    color: #B3B1FF;
     margin-left: 121px;
     font-family: Poppins;
     line-height: 29px;
@@ -382,6 +421,33 @@ footer {
 	z-index: -1;
 	animation: BGgradient 10s infinite; 
 }
+.mydivEducation {
+	display: flex;
+	position: relative;
+	margin: 10% auto 0;
+	width: 450px;
+	height: 714px;
+	background-image: url(../Images/education.jpg);
+	background-size:cover;
+	background-repeat: no-repeat; 
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+}
+
+.animate-bgEducation:before, .animate-bgEducation:after {
+	content: '';
+	position: absolute;
+	left: -3px;
+    top: -3px;
+    background: linear-gradient(120deg, rgb(4, 0, 255), rgb(255, 255, 255),rgb(0, 162, 255) );
+	background-size: 300%;
+	width: calc(100% + 6px);
+	height: calc(100% + 3px);
+	z-index: -1;
+	animation: BGgradient 10s infinite; 
+}
 @keyframes BGgradient {
 	0% {
 		background-position: 0% 200%;
@@ -401,6 +467,9 @@ footer {
     filter: blur(15px);
 } 
 .animate-bgProjects:after {
+    filter: blur(15px);
+} 
+.animate-bgEducation:after {
     filter: blur(15px);
 } 
 
@@ -445,6 +514,9 @@ footer {
 }
 .luzProjects:hover{
     color: #FAFF00;
+}
+.luzEducation:hover{
+    color: #001EBA;
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -594,6 +666,16 @@ footer {
         text-align: center;
         margin-left: 0px;
     }
+    .mainTittleEducation{
+        width: 280px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 130%;
+        text-align: center;
+        margin-left: 0px;
+    }
     .mainSubtittle {
         width: 260px;
         font-family: Poppins;
@@ -614,6 +696,15 @@ footer {
         margin-left: 0px;
     }
     .mainSubtittleProjects{
+        width: 260px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 0px;
+    }
+    .mainSubtittleEducation{
         width: 260px;
         font-family: Poppins;
         font-style: normal;
@@ -644,6 +735,16 @@ footer {
         text-align: justify;
     }
     .mainTextProjects{
+        width: 278px;
+        margin-left: 0px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180.3%;
+        text-align: justify;
+    }
+    .mainTextEducation{
         width: 278px;
         margin-left: 0px;
         font-family: Poppins;
@@ -724,6 +825,10 @@ footer {
         padding-bottom: 0px;
         padding-right: 137px;
     }
+    .mydivEducation{
+        width: 274px;
+        height: 359px;
+    }
 
     .git {
         background-image: url(../social-media/bxl-github.svg);
@@ -770,6 +875,10 @@ footer {
         width: 366px;
         margin-left: 0px; 
     }
+    .mainTittleEducation{
+        width: 366px;
+        margin-left: 0px; 
+    }
     .mainText {
         margin-left: 0px;
         width: 350px;
@@ -779,6 +888,10 @@ footer {
         width: 350px;
     }
     .mainTextProjects{
+        margin-left: 0px;
+        width: 350px;
+    }
+    .mainTextEducation{
         margin-left: 0px;
         width: 350px;
     }
@@ -795,6 +908,9 @@ footer {
     .mainSubtittleProjects{
         margin-left: 0px;
     }
+    .mainSubtittleEducation{
+        margin-left: 0px;
+    }
     .mydiv{
         width: 340px;
         height: 607px;
@@ -804,6 +920,10 @@ footer {
         height: 607px;
     }
     .mydivProjects{
+        width: 340px;
+        height: 607px;
+    }
+    .mydivEducation{
         width: 340px;
         height: 607px;
     }
@@ -840,6 +960,11 @@ footer {
         margin-left: 0px;
         margin-left: 190px;
     }
+    .mainTittleEducation{
+        width: 366px;
+        margin-left: 0px;
+        margin-left: 190px;
+    }
     .mainText {
         margin-left: 0px;
         width: 350px;
@@ -855,6 +980,11 @@ footer {
         width: 350px;
         margin-left: 190px;
     }
+    .mainTextEducation{
+        margin-left: 0px;
+        width: 350px;
+        margin-left: 190px;
+    }
     .mainSubtittle {
         margin-left: 190px;
     }
@@ -863,6 +993,9 @@ footer {
         margin-left: 190px;
     }
     .mainSubtittleProjects{
+        margin-left: 190px;
+    }
+    .mainSubtittleEducation{
         margin-left: 190px;
     }
     .ListProjects{
@@ -877,6 +1010,10 @@ footer {
         height: 714px;
     }
     .mydivProjects{
+        width: 450px;
+        height: 714px;
+    }
+    .mydivEducation{
         width: 450px;
         height: 714px;
     }
