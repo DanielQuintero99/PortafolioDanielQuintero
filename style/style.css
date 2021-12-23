@@ -154,7 +154,7 @@ footer {
 .leftContent {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 35% 15% 15% 15%;
+    grid-template-rows: 25% 15% 15% auto;
     background-color: #212020;
     align-items: center;
     align-content: space-evenly;
@@ -338,7 +338,32 @@ footer {
     margin-top: 10%;
 
 }
-
+.gridCertificates{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    justify-items: center;
+}
+.google1{
+    display: grid;
+    background-image: url(../Images/certificado-google-html-1.jpg);
+    grid-column: 1/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+    
+}
+.google2{
+    display: grid;
+    background-image: url(../Images/certificado-google-html-2.jpg);
+    grid-column: 2/3;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .mydiv {
 	display: flex;
 	position: relative;
@@ -520,6 +545,16 @@ footer {
 }
 
 /* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 300px) {
+.google1{
+    width: 130px;
+    height: 70px;
+}
+.google2{
+    width: 130px;
+    height: 70px;
+}
+}
 @media (max-width: 768px) {
     body {
         background-color: #010101;
@@ -760,6 +795,14 @@ footer {
         align-items: center;
         justify-content: space-around;
     }
+    .google1{
+        width: 150px;
+        height: 100px;
+    }
+    .google2{
+        width: 150px;
+        height: 100px;
+    }
     .buton {
         display: flex;
         justify-content: center;
@@ -911,6 +954,14 @@ footer {
     .mainSubtittleEducation{
         margin-left: 0px;
     }
+    .google1{
+        width: 190px;
+        height: 100px;
+    }
+    .google2{
+        width: 190px;
+        height: 100px;
+    }
     .mydiv{
         width: 340px;
         height: 607px;
@@ -1000,6 +1051,14 @@ footer {
     }
     .ListProjects{
         margin-left: 270px;
+    }
+    .google1{
+        width: 300px;
+        height: 200px;
+    }
+    .google2{
+        width: 300px;
+        height: 200px;
     }
     .mydiv{
         width: 450px;
