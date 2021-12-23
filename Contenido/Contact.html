@@ -4,45 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact- Daniel Quintero</title>
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Contact Me</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li> <a href="../index.html">Daniel Quintero</a> </li> 
-                <li> <a href="../index.html">Home</a> </li> </li>
-                <li> <a href="aboutme.html">About Me</a> </li>
-                <li> <a href="projects.html">Projects</a> </li>
-                <li> <a href="education.html">Education and certification</a> </li>
-                <li><a href="#">Contact</a></li>
+                <div class="navLeft">
+                    <div class="navLeftFlex">
+                        <div class="logoContact"></div>
+                        <li> <a class="luzContact" href="../index.html">Daniel Quintero</a> </li>
+                    </div>
+                </div>
+                <div class="navRigth">
+                    <div class="navRigthFlex">
+                        <li> <a class="luzContact" href="../index.html">Home</a> </li>
+                        <li> <a class="luzContact"  href="aboutme.html">About Me</a> </li>
+                        <li> <a class="luzContact" href="projects.html">Projects</a> </li>
+                        <li> <a class="luzContact" href="#">Education</a> </li>
+                        <li> <a class="local" href="#">Contact</a></li>
+                    </div>
+                </div>
             </ul>
-            <a href="https://www.linkedin.com/in/daniel-barbosa-quintero-238884163/"><img src="../social-media/bxl-linkedin.svg" alt="linkedin"></a>
-            <a href="https://github.com/DanielMnn"> <img src="../social-media/bxl-github.svg" alt="GitHub"></a>
-            <a href="https://wa.link/ciy49k"><img src="../social-media/bxl-whatsapp.svg" alt="whatsapp"> </a>
         </nav>
     </header>
     <main>
-      
-        <form action="">
-            
-            <fieldset>
-                <legend> I Will Contact You!</legend> 
-                <label for="name">What it's your name?</label> <br>
-                    <input type="text" name="name" placeholder="Type your name" required> <br>
-                <label for="e-mail">What it's your E-mail?</label><br>
-                    <input type="email"name="e-mail" placeholder="Type your E-mail" required><br>
-                <label for="phone">What it's your phone number?</label> <br>
-                    <input type="number" name="phone" placeholder="Type your phone number" required> <br>
-                <label for="coment">Do you have any question or coment?</label><br>
-                    <textarea name="coment" id="" cols="30" rows="10" placeholder="Type a question, sugestion or coment"></textarea> <br>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </fieldset>
-        </form>
+        <article>
+            <section class="leftContentContact">
+                    <h1 class="mainTittleContact"> 
+                        Contact
+                    </h1>
+                    <form class="form-contact" action="">
+                        <H4>I will Contact you</H4>
+                        <input class="controls" type="text" name="name" placeholder="What is your name?" required>
+                        <input class="controls" type="email" name="e-mail" placeholder=" E-mail" required>
+                        <input class="controls" type="number" name="phone" placeholder="Phone number" required>
+                        <textarea class="controls" name="coment" id="" cols="30" rows="5"
+                            placeholder="Type a question, sugestion or coment"></textarea>
+                        <input class="butons" type="submit" value="Submit">
+                   </form>
+            </section>
+            <section class="rightContent">
+                <div class="mydivContact animate-bgContact">
+                  
+            </section>
+        </article>
     </main>
 </body>
 <footer>
-    Design by Daniel Quintero
+    <p> Design by Daniel Quintero</p>
+    <div class="rigthFooter"></div>
 </footer>
 </html>

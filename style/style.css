@@ -132,6 +132,15 @@ footer {
     background-position: center;
     margin-right: 2%;
 }
+.logoContact{
+    width: 36px;
+    height: 33px;
+    background-image: url(../logos-y-nav/logopink.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2%;
+}
 .navRigth {
     display: grid;
     grid-column: 2/3;
@@ -158,6 +167,15 @@ footer {
     background-color: #212020;
     align-items: center;
     align-content: space-evenly;
+}
+.leftContentContact{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% auto;
+    background-color: #212020;
+    align-items: center;
+    justify-items: center;
+
 }
 
 .mainTittle {
@@ -194,6 +212,15 @@ footer {
 }
 .mainTittleEducation{
     color: #001EBA;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    height: 11px;
+    line-height: 65px;
+}
+.mainTittleContact{
+    color: #EBB1FF;
     font-family: Poppins;
     font-style: normal;
     font-weight: 800;
@@ -317,7 +344,42 @@ footer {
     height: 100px;
     justify-content: space-around;
 }
-
+.form-contact{
+    width: 500px;
+    height: 480px;
+    margin-top: 15%;
+    background-color: #010101;
+    margin-left: 127px;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: Poppins;
+    box-shadow:7px 13px 37px black
+}
+.form-contact h4{
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #EBB1FF;
+    text-align: center;
+}
+.controls{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: rgba(33, 32, 32, 1);
+    font-size: 18px;
+    border-color: #EBB1FF;    
+}
+.butons{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #010101;
+    background-color: #EBB1FF;
+}
 .curriculum {
     font-family: Poppins;
     font-style: normal;
@@ -473,6 +535,34 @@ footer {
 	z-index: -1;
 	animation: BGgradient 10s infinite; 
 }
+.mydivContact {
+	display: flex;
+	position: relative;
+	margin: 10% auto 0;
+	width: 450px;
+	height: 714px;
+	background-image: url(../Images/contact.jpg);
+	background-size:cover;
+	background-repeat: no-repeat; 
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+    background-position: center;
+	
+}
+
+.animate-bgContact:before, .animate-bgContact:after {
+	content: '';
+	position: absolute;
+	left: -3px;
+    top: -3px;
+    background: linear-gradient(120deg, rgb(239, 67, 255), rgb(255, 255, 255),rgb(255, 0, 255) );
+	background-size: 300%;
+	width: calc(100% + 6px);
+	height: calc(100% + 3px);
+	z-index: -1;
+	animation: BGgradient 10s infinite; 
+}
 @keyframes BGgradient {
 	0% {
 		background-position: 0% 200%;
@@ -495,6 +585,9 @@ footer {
     filter: blur(15px);
 } 
 .animate-bgEducation:after {
+    filter: blur(15px);
+} 
+.animate-bgContact:after {
     filter: blur(15px);
 } 
 
@@ -543,18 +636,12 @@ footer {
 .luzEducation:hover{
     color: #001EBA;
 }
+.luzContact:hover{
+    color:#EBB1FF
+}
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 300px) {
-.google1{
-    width: 130px;
-    height: 70px;
-}
-.google2{
-    width: 130px;
-    height: 70px;
-}
-}
+
 @media (max-width: 768px) {
     body {
         background-color: #010101;
@@ -667,6 +754,12 @@ footer {
         background-color: #212020;
         justify-content: space-evenly;
     }
+    .leftContentContact {
+        display: flex;
+        flex-direction: column;
+        background-color: #212020;
+    
+    }
 
     .mainTittle {
         width: 280px;
@@ -707,6 +800,17 @@ footer {
         font-style: normal;
         font-weight: 800;
         font-size: 30px;
+        line-height: 130%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .mainTittleContact{
+        width: 280px;
+        height: 23px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
         line-height: 130%;
         text-align: center;
         margin-left: 0px;
@@ -779,6 +883,23 @@ footer {
         line-height: 180.3%;
         text-align: justify;
     }
+    .form-contact h4{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .controls{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 15px;
+        font-size: 10px;
+ 
+    }
+    .butons{
+        margin-top: 5px;
+        font-size: 13px;
+        height: 30px;
+
+    }
     .mainTextEducation{
         width: 278px;
         margin-left: 0px;
@@ -788,6 +909,13 @@ footer {
         font-size: 14px;
         line-height: 180.3%;
         text-align: justify;
+    }
+    .form-contact{
+        width: 250px;
+        height: 280px;
+        margin-left: 0px;
+        margin-top: 0;
+        padding: 15px;
     }
     .ListProjects{
 
@@ -872,6 +1000,10 @@ footer {
         width: 274px;
         height: 359px;
     }
+    .mydivContact{
+        width: 274px;
+        height: 359px;
+    }
 
     .git {
         background-image: url(../social-media/bxl-github.svg);
@@ -938,6 +1070,10 @@ footer {
         margin-left: 0px;
         width: 350px;
     }
+    .mainTextContact{
+        margin-left: 0px;
+        width: 350px;
+    }
     .ListProjects{
         margin-left: 85px;
     }
@@ -987,7 +1123,38 @@ footer {
         padding-bottom: 114px;
         padding-right: 30px;
     }
+    .form-contact{
+        width: 70%;
+        height: 490px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 50px;
+
+    }
+    .mydivContact{
+        width: 340px;
+        height: 607px;
+    }
+    .form-contact h4{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .controls{
+        width: 100%;
+        height: 70px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    
+    }
+    .butons{
+        margin-top: 5px;
+        font-size: 13px;
+        height: 50px;
+    
+    }
 }
+
+
 
 /* // Large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
@@ -1087,5 +1254,33 @@ footer {
 
     .buton {
         margin-left: 200px;
+    }
+    .form-contact{
+        height: 580px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 50px;
+
+    }
+    .mydivContact{
+        width: 450px;
+        height: 714px;
+    }
+    .form-contact h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .controls{
+        width: 100%;
+        height: 75px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    
+    }
+    .butons{
+        margin-top: 5px;
+        font-size: 20px;
+        height: 80px;
+    
     }
 }
