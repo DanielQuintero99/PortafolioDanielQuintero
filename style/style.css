@@ -348,7 +348,7 @@ footer {
 	position: absolute;
 	left: -3px;
     top: -3px;
-    background: linear-gradient(120deg, rgb(255, 0, 0), rgb(0, 0, 0),rgb(240, 136, 136) );
+    background: linear-gradient(120deg, rgb(255, 0, 0), rgb(255, 255, 255),rgb(240, 136, 136) );
 	background-size: 300%;
 	width: calc(100% + 6px);
 	height: calc(100% + 3px);
