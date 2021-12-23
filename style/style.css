@@ -280,9 +280,7 @@ footer {
 }
 
 
-.borderAboutMobile {
-    display: none;
-}
+
 .borderProjectsMobile{
     display: none;
 }
@@ -308,7 +306,7 @@ footer {
 }
 
 
-.borderAbout{
+/* .borderAbout{
     z-index: 20;
     display: grid;
     grid-template-columns: 1fr;
@@ -318,7 +316,7 @@ footer {
     justify-items: center;
     align-items: center;
 
-}
+} */
 .borderProjects{
     z-index: 20;
     display: grid;
@@ -357,7 +355,33 @@ footer {
 	z-index: -1;
 	animation: BGgradient 10s infinite; 
 }
+.mydivAbout {
+	display: flex;
+	position: relative;
+	margin: 10% auto 0;
+	width: 450px;
+	height: 714px;
+	background-image: url(../Images/about.png);
+	background-size:cover;
+	background-repeat: no-repeat; 
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+}
 
+.animate-bgAbout:before, .animate-bgAbout:after {
+	content: '';
+	position: absolute;
+	left: -3px;
+    top: -3px;
+    background: linear-gradient(120deg, rgb(255, 0, 0), rgb(0, 0, 0),rgb(240, 136, 136) );
+	background-size: 300%;
+	width: calc(100% + 6px);
+	height: calc(100% + 3px);
+	z-index: -1;
+	animation: BGgradient 10s infinite; 
+}
 @keyframes BGgradient {
 	0% {
 		background-position: 0% 200%;
@@ -371,6 +395,9 @@ footer {
 }
 
 .animate-bg:after {
+    filter: blur(15px);
+} 
+.animate-bgAbout:after {
     filter: blur(15px);
 } 
 
@@ -675,14 +702,9 @@ footer {
         width: 274px;
         height: 359px;
     }
-    .borderAboutMobile{
-        z-index: 100;
-        margin-top: 10%;
-        z-index: 10;
-        display: grid;
-        grid-template-columns: 1fr;
-        border: 1px solid;
-        border-image: linear-gradient(to bottom, rgb(255, 0, 0) 0%, rgba(254, 254, 254, 0) 100%) 1;
+    .mydivAbout{
+        width: 274px;
+        height: 359px;
     }
     .borderProjectsMobile{
         z-index: 100;
@@ -693,9 +715,7 @@ footer {
         border-image: linear-gradient(to bottom, rgb(255, 251, 0) 0%, rgba(254, 254, 254, 0) 100%) 1;
     }
 
-    .borderAbout{
-        display: none;
-    }
+
     .borderProjects{
         display: none;
     }
@@ -783,10 +803,11 @@ footer {
         width: 340px;
         height: 607px;
     }
-    .borderAbout{
-        width: 350px;
-
+    .mydivAbout{
+        width: 340px;
+        height: 607px;
     }
+
     .borderProjects{
         width: 350px;
   
@@ -856,17 +877,9 @@ footer {
         width: 450px;
         height: 714px
     }
-    .borderAbout{
-        z-index: 20;
-        display: grid;
-        grid-template-columns: 1fr;
-        background-position-x: 95px;
-        border: 1px solid;
-        border-image: linear-gradient(to bottom, rgb(255, 0, 0) 0%, rgba(254, 254, 254, 0) 100%) 1;
-        justify-items: center;
-        align-items: center;
+    .mydivAbout{
         width: 450px;
- 
+        height: 714px;
     }
     .borderProjects{
         z-index: 20;
