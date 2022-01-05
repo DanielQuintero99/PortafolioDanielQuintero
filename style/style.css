@@ -45,6 +45,9 @@ header {
     padding-top: 0;
     padding-bottom: 0;
 }
+.offcanvas-title{
+    color: #010101;
+}
 a {
     text-decoration: none;
     color: #FEFEFE;
@@ -84,7 +87,7 @@ footer {
     font-size: 10px;
     color: rgba(255, 255, 255, 0.5);
     background-color: #212020;
-}
+    }
 
 .rigthFooter {
     z-index: 10;
@@ -481,6 +484,7 @@ footer {
     background-image: url(../Images/hero-image.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: center;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
@@ -688,19 +692,19 @@ footer {
 }
 
 .luzHome:hover {
-    color: #FEFEFE;
+    color: #FEFEFE !important;
 }
 
 .luzAbout:hover {
-    color: #9E1010
+    color: #9E1010 !important;
 }
 
 .luzProjects:hover {
-    color: #FAFF00;
+    color: #FAFF00 !important;
 }
 
 .luzEducation:hover {
-    color: #001EBA;
+    color: #001EBA !important;
 }
 
 .luzContact:hover {
@@ -723,10 +727,6 @@ footer {
         background-color: transparent !important;
     }
 
-    .navbar-dark .navbar-toggler {
-        color: transparent;
-        border-color: transparent !important;
-    }
 
     header {
         display: flex;
@@ -1120,6 +1120,11 @@ footer {
     .nav-link-active{
         color:#010101
     }
+    .navbar-dark .navbar-toggler {
+        color: transparent;
+        border-color: transparent !important;
+    }
+
 }
 /* // Medium devices (tablets, less than 992px) */
 @media (min-width: 769px) {
