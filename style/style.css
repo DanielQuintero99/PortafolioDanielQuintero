@@ -21,15 +21,30 @@ header {
     grid-row: 1/2;
 }
 
-nav {
-    display: grid;
+.bg-light {
+    background-color: #212020 !important;
+}
 
+.navbar-brand {
+    font-size: 16px;
+    font-family: poppins;
+}
+
+.navBarStyle {
+    font-size: 14px;
+    font-family: poppins;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #8A8A8A;
 }
 
 a {
     text-decoration: none;
     color: #FEFEFE;
+    font-family: poppins;
 }
+
 
 ul {
     display: grid;
@@ -114,7 +129,8 @@ footer {
     background-position: center;
     margin-right: 2%;
 }
-.logoProjects{
+
+.logoProjects {
     width: 36px;
     height: 33px;
     background-image: url(../logos-y-nav/logoyellow.png);
@@ -123,7 +139,8 @@ footer {
     background-position: center;
     margin-right: 2%;
 }
-.logoEducation{
+
+.logoEducation {
     width: 36px;
     height: 33px;
     background-image: url(../logos-y-nav/logoblue.png);
@@ -132,7 +149,8 @@ footer {
     background-position: center;
     margin-right: 2%;
 }
-.logoContact{
+
+.logoContact {
     width: 36px;
     height: 33px;
     background-image: url(../logos-y-nav/logopink.png);
@@ -141,6 +159,7 @@ footer {
     background-position: center;
     margin-right: 2%;
 }
+
 .navRigth {
     display: grid;
     grid-column: 2/3;
@@ -150,13 +169,14 @@ footer {
     font-style: normal;
 }
 
-.navRigth li a {
+.nav-link,
+.navbar-dark {
     color: #8A8A8A;
-    padding-right: 15px;
-
+    font-family: poppins;
+    font-size: 14px;
 }
 
-.navRigth li a.local {
+.local {
     color: #FEFEFE;
 }
 
@@ -168,7 +188,8 @@ footer {
     align-items: center;
     align-content: space-evenly;
 }
-.leftContentContact{
+
+.leftContentContact {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 25% auto;
@@ -201,7 +222,8 @@ footer {
     line-height: 65px;
     margin-left: 121px;
 }
-.mainTittleProjects{
+
+.mainTittleProjects {
     color: #FAFF00;
     font-family: Poppins;
     font-style: normal;
@@ -210,7 +232,8 @@ footer {
     height: 11px;
     line-height: 65px;
 }
-.mainTittleEducation{
+
+.mainTittleEducation {
     color: #001EBA;
     font-family: Poppins;
     font-style: normal;
@@ -219,7 +242,8 @@ footer {
     height: 11px;
     line-height: 65px;
 }
-.mainTittleContact{
+
+.mainTittleContact {
     color: #EBB1FF;
     font-family: Poppins;
     font-style: normal;
@@ -228,6 +252,7 @@ footer {
     height: 11px;
     line-height: 65px;
 }
+
 .mainSubtittle {
     width: 254px;
     height: 20px;
@@ -249,7 +274,8 @@ footer {
     font-size: 20px;
     margin-left: 121px;
 }
-.mainSubtittleProjects{
+
+.mainSubtittleProjects {
     color: #FAFF00;
     width: 287px;
     height: 20px;
@@ -259,6 +285,7 @@ footer {
     font-size: 20px;
     margin-left: 121px;
 }
+
 .mainSubtittleEducation {
     width: 254px;
     height: 20px;
@@ -269,6 +296,7 @@ footer {
     color: #00b7ff;
     margin-left: 121px;
 }
+
 .mainText {
     margin-left: 121px;
     font-family: Poppins;
@@ -280,7 +308,8 @@ footer {
     width: 460px;
     text-align: justify;
 }
-.mainTextAbout{
+
+.mainTextAbout {
     color: #FFA0A0;
     margin-left: 121px;
     font-family: Poppins;
@@ -291,7 +320,8 @@ footer {
     width: 460px;
     text-align: justify;
 }
-.mainTextProjects{
+
+.mainTextProjects {
     color: #ff8800;
     margin-left: 121px;
     font-family: Poppins;
@@ -302,7 +332,8 @@ footer {
     width: 460px;
     text-align: justify;
 }
-.mainTextEducation{
+
+.mainTextEducation {
     color: #B3B1FF;
     margin-left: 121px;
     font-family: Poppins;
@@ -313,6 +344,7 @@ footer {
     width: 460px;
     text-align: justify;
 }
+
 .buton {
     display: flex;
     justify-content: center;
@@ -333,7 +365,7 @@ footer {
     margin-right: 22px;
 }
 
-.ListProjects{
+.ListProjects {
     display: flex;
     flex-direction: column;
     margin-left: 270px;
@@ -344,7 +376,8 @@ footer {
     height: 100px;
     justify-content: space-around;
 }
-.form-contact{
+
+.form-contact {
     width: 500px;
     height: 480px;
     margin-top: 15%;
@@ -353,15 +386,17 @@ footer {
     padding: 30px;
     border-radius: 4px;
     font-family: Poppins;
-    box-shadow:7px 13px 37px black
+    box-shadow: 7px 13px 37px black
 }
-.form-contact h4{
+
+.form-contact h4 {
     font-size: 26px;
     margin-bottom: 30px;
     color: #EBB1FF;
     text-align: center;
 }
-.controls{
+
+.controls {
     width: 100%;
     height: 60px;
     text-align: center;
@@ -369,9 +404,10 @@ footer {
     border-radius: 4px;
     background-color: rgba(33, 32, 32, 1);
     font-size: 18px;
-    border-color: #EBB1FF;    
+    border-color: #EBB1FF;
 }
-.butons{
+
+.butons {
     width: 100%;
     border: none;
     padding: 12px;
@@ -380,6 +416,7 @@ footer {
     color: #010101;
     background-color: #EBB1FF;
 }
+
 .curriculum {
     font-family: Poppins;
     font-style: normal;
@@ -400,14 +437,16 @@ footer {
     margin-top: 10%;
 
 }
-.gridCertificates{
+
+.gridCertificates {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100%;
     justify-items: center;
 }
-.google1{
+
+.google1 {
     display: grid;
     background-image: url(../Images/certificado-google-html-1.jpg);
     grid-column: 1/2;
@@ -415,9 +454,10 @@ footer {
     background-repeat: no-repeat;
     width: 300px;
     height: 200px;
-    
+
 }
-.google2{
+
+.google2 {
     display: grid;
     background-image: url(../Images/certificado-google-html-2.jpg);
     grid-column: 2/3;
@@ -426,180 +466,198 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .mydiv {
-	display: flex;
-	position: relative;
-	margin: 10% auto 0;
-	width: 450px;
-	height: 714px;
-	background-image: url(../Images/hero-image.png);
-	background-size:cover;
-	background-repeat: no-repeat; 
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;
-	
+    display: flex;
+    position: relative;
+    margin: 10% auto 0;
+    width: 450px;
+    height: 714px;
+    background-image: url(../Images/hero-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 
-.animate-bg:before, .animate-bg:after {
-	content: '';
-	position: absolute;
-	left: -3px;
+.animate-bg:before,
+.animate-bg:after {
+    content: '';
+    position: absolute;
+    left: -3px;
     top: -3px;
-    background: linear-gradient(120deg, black, white,gray );
-	background-size: 300%;
-	width: calc(100% + 6px);
-	height: calc(100% + 3px);
-	z-index: -1;
-	animation: BGgradient 10s infinite; 
+    background: linear-gradient(120deg, black, white, gray);
+    background-size: 300%;
+    width: calc(100% + 6px);
+    height: calc(100% + 3px);
+    z-index: -1;
+    animation: BGgradient 10s infinite;
 }
+
 .mydivAbout {
-	display: flex;
-	position: relative;
-	margin: 10% auto 0;
-	width: 450px;
-	height: 714px;
-	background-image: url(../Images/about.png);
-	background-size:cover;
-	background-repeat: no-repeat; 
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;
+    display: flex;
+    position: relative;
+    margin: 10% auto 0;
+    width: 450px;
+    height: 714px;
+    background-image: url(../Images/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     background-position: center;
-	
+
 }
 
-.animate-bgAbout:before, .animate-bgAbout:after {
-	content: '';
-	position: absolute;
-	left: -3px;
+.animate-bgAbout:before,
+.animate-bgAbout:after {
+    content: '';
+    position: absolute;
+    left: -3px;
     top: -3px;
-    background: linear-gradient(120deg, rgb(255, 0, 0), rgb(255, 255, 255),rgb(240, 136, 136) );
-	background-size: 300%;
-	width: calc(100% + 6px);
-	height: calc(100% + 3px);
-	z-index: -1;
-	animation: BGgradient 10s infinite; 
+    background: linear-gradient(120deg, rgb(255, 0, 0), rgb(255, 255, 255), rgb(240, 136, 136));
+    background-size: 300%;
+    width: calc(100% + 6px);
+    height: calc(100% + 3px);
+    z-index: -1;
+    animation: BGgradient 10s infinite;
 }
+
 .mydivProjects {
-	display: flex;
-	position: relative;
-	margin: 10% auto 0;
-	width: 450px;
-	height: 714px;
-	background-image: url(../Images/projects.jpg);
-	background-size:cover;
-	background-repeat: no-repeat; 
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;
-	
+    display: flex;
+    position: relative;
+    margin: 10% auto 0;
+    width: 450px;
+    height: 714px;
+    background-image: url(../Images/projects.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 
-.animate-bgProjects:before, .animate-bgProjects:after {
-	content: '';
-	position: absolute;
-	left: -3px;
+.animate-bgProjects:before,
+.animate-bgProjects:after {
+    content: '';
+    position: absolute;
+    left: -3px;
     top: -3px;
-    background: linear-gradient(120deg, rgb(255, 255, 255), rgb(255, 238, 0),rgb(255, 30, 30) );
-	background-size: 300%;
-	width: calc(100% + 6px);
-	height: calc(100% + 3px);
-	z-index: -1;
-	animation: BGgradient 10s infinite; 
+    background: linear-gradient(120deg, rgb(255, 255, 255), rgb(255, 238, 0), rgb(255, 30, 30));
+    background-size: 300%;
+    width: calc(100% + 6px);
+    height: calc(100% + 3px);
+    z-index: -1;
+    animation: BGgradient 10s infinite;
 }
+
 .mydivEducation {
-	display: flex;
-	position: relative;
-	margin: 10% auto 0;
-	width: 450px;
-	height: 714px;
-	background-image: url(../Images/education.jpg);
-	background-size:cover;
-	background-repeat: no-repeat; 
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;
-	
+    display: flex;
+    position: relative;
+    margin: 10% auto 0;
+    width: 450px;
+    height: 714px;
+    background-image: url(../Images/education.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 
-.animate-bgEducation:before, .animate-bgEducation:after {
-	content: '';
-	position: absolute;
-	left: -3px;
+.animate-bgEducation:before,
+.animate-bgEducation:after {
+    content: '';
+    position: absolute;
+    left: -3px;
     top: -3px;
-    background: linear-gradient(120deg, rgb(4, 0, 255), rgb(255, 255, 255),rgb(0, 162, 255) );
-	background-size: 300%;
-	width: calc(100% + 6px);
-	height: calc(100% + 3px);
-	z-index: -1;
-	animation: BGgradient 10s infinite; 
+    background: linear-gradient(120deg, rgb(4, 0, 255), rgb(255, 255, 255), rgb(0, 162, 255));
+    background-size: 300%;
+    width: calc(100% + 6px);
+    height: calc(100% + 3px);
+    z-index: -1;
+    animation: BGgradient 10s infinite;
 }
+
 .mydivContact {
-	display: flex;
-	position: relative;
-	margin: 10% auto 0;
-	width: 450px;
-	height: 714px;
-	background-image: url(../Images/contact.jpg);
-	background-size:cover;
-	background-repeat: no-repeat; 
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;
+    display: flex;
+    position: relative;
+    margin: 10% auto 0;
+    width: 450px;
+    height: 714px;
+    background-image: url(../Images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     background-position: center;
-	
+
 }
 
-.animate-bgContact:before, .animate-bgContact:after {
-	content: '';
-	position: absolute;
-	left: -3px;
+.animate-bgContact:before,
+.animate-bgContact:after {
+    content: '';
+    position: absolute;
+    left: -3px;
     top: -3px;
-    background: linear-gradient(120deg, rgb(239, 67, 255), rgb(255, 255, 255),rgb(255, 0, 255) );
-	background-size: 300%;
-	width: calc(100% + 6px);
-	height: calc(100% + 3px);
-	z-index: -1;
-	animation: BGgradient 10s infinite; 
+    background: linear-gradient(120deg, rgb(239, 67, 255), rgb(255, 255, 255), rgb(255, 0, 255));
+    background-size: 300%;
+    width: calc(100% + 6px);
+    height: calc(100% + 3px);
+    z-index: -1;
+    animation: BGgradient 10s infinite;
 }
+
 @keyframes BGgradient {
-	0% {
-		background-position: 0% 200%;
-	}
-	50% {
-		background-position: 200% 0%;
-	}
-	100% {
-		background-position: 0% 330%;
-	}
+    0% {
+        background-position: 0% 200%;
+    }
+
+    50% {
+        background-position: 200% 0%;
+    }
+
+    100% {
+        background-position: 0% 330%;
+    }
 }
 
 .animate-bg:after {
     filter: blur(15px);
-} 
+}
+
 .animate-bgAbout:after {
     filter: blur(15px);
-} 
+}
+
 .animate-bgProjects:after {
     filter: blur(15px);
-} 
+}
+
 .animate-bgEducation:after {
     filter: blur(15px);
-} 
+}
+
 .animate-bgContact:after {
     filter: blur(15px);
-} 
+}
 
 .socialMedia {
     z-index: 30;
     width: 177px;
     height: 59px;
     display: flex;
-	padding-bottom: 50px;
-	padding-right: 30px;
+    padding-bottom: 50px;
+    padding-right: 30px;
 
 }
+
 .git {
     background-image: url(../social-media/bxl-github.svg);
     background-repeat: no-repeat;
@@ -624,20 +682,24 @@ footer {
     background-size: cover;
 }
 
-.luzHome:hover{
+.luzHome:hover {
     color: #FEFEFE;
 }
-.luzAbout:hover{
-    color:#9E1010
+
+.luzAbout:hover {
+    color: #9E1010
 }
-.luzProjects:hover{
+
+.luzProjects:hover {
     color: #FAFF00;
 }
-.luzEducation:hover{
+
+.luzEducation:hover {
     color: #001EBA;
 }
-.luzContact:hover{
-    color:#EBB1FF
+
+.luzContact:hover {
+    color: #EBB1FF
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -656,26 +718,11 @@ footer {
         display: flex;
         background-color: #212020;
         width: 100%;
-        padding-top: 5%;
     }
 
     nav {
         display: grid;
         width: 100%;
-    }
-
-    ul {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2, 50%);
-        list-style: none;
-        width: 100%;
-        align-items: end;
-    }
-
-    li {
-        font-size: 12px;
-        margin-left: 5px;
     }
 
     main {
@@ -754,11 +801,12 @@ footer {
         background-color: #212020;
         justify-content: space-evenly;
     }
+
     .leftContentContact {
         display: flex;
         flex-direction: column;
         background-color: #212020;
-    
+
     }
 
     .mainTittle {
@@ -773,6 +821,7 @@ footer {
         margin-left: 0px;
 
     }
+
     .mainTittleAbout {
         width: 280px;
         font-family: Poppins;
@@ -784,7 +833,8 @@ footer {
         color: #9E1010;
         margin-left: 0px;
     }
-    .mainTittleProjects{
+
+    .mainTittleProjects {
         width: 280px;
         font-family: Poppins;
         font-style: normal;
@@ -794,7 +844,8 @@ footer {
         text-align: center;
         margin-left: 0px;
     }
-    .mainTittleEducation{
+
+    .mainTittleEducation {
         width: 280px;
         font-family: Poppins;
         font-style: normal;
@@ -804,7 +855,8 @@ footer {
         text-align: center;
         margin-left: 0px;
     }
-    .mainTittleContact{
+
+    .mainTittleContact {
         width: 280px;
         height: 23px;
         font-family: Poppins;
@@ -815,6 +867,7 @@ footer {
         text-align: center;
         margin-left: 0px;
     }
+
     .mainSubtittle {
         width: 260px;
         font-family: Poppins;
@@ -834,7 +887,8 @@ footer {
         line-height: 21px;
         margin-left: 0px;
     }
-    .mainSubtittleProjects{
+
+    .mainSubtittleProjects {
         width: 260px;
         font-family: Poppins;
         font-style: normal;
@@ -843,7 +897,8 @@ footer {
         line-height: 21px;
         margin-left: 0px;
     }
-    .mainSubtittleEducation{
+
+    .mainSubtittleEducation {
         width: 260px;
         font-family: Poppins;
         font-style: normal;
@@ -852,6 +907,7 @@ footer {
         line-height: 21px;
         margin-left: 0px;
     }
+
     .mainText {
         width: 278px;
         margin-left: 0px;
@@ -863,7 +919,8 @@ footer {
         text-align: justify;
         color: #CFCFCF;
     }
-    .mainTextAbout{
+
+    .mainTextAbout {
         width: 278px;
         margin-left: 0px;
         font-family: Poppins;
@@ -873,7 +930,8 @@ footer {
         line-height: 180.3%;
         text-align: justify;
     }
-    .mainTextProjects{
+
+    .mainTextProjects {
         width: 278px;
         margin-left: 0px;
         font-family: Poppins;
@@ -883,24 +941,28 @@ footer {
         line-height: 180.3%;
         text-align: justify;
     }
-    .form-contact h4{
+
+    .form-contact h4 {
         font-size: 14px;
         margin-bottom: 0px;
     }
-    .controls{
+
+    .controls {
         width: 100%;
         height: 30px;
         margin-bottom: 15px;
         font-size: 10px;
- 
+
     }
-    .butons{
+
+    .butons {
         margin-top: 5px;
         font-size: 13px;
         height: 30px;
 
     }
-    .mainTextEducation{
+
+    .mainTextEducation {
         width: 278px;
         margin-left: 0px;
         font-family: Poppins;
@@ -910,27 +972,32 @@ footer {
         line-height: 180.3%;
         text-align: justify;
     }
-    .form-contact{
+
+    .form-contact {
         width: 250px;
         height: 280px;
         margin-left: 0px;
         margin-top: 0;
         padding: 15px;
     }
-    .ListProjects{
+
+    .ListProjects {
 
         margin-left: 0px;
         align-items: center;
         justify-content: space-around;
     }
-    .google1{
+
+    .google1 {
         width: 150px;
         height: 100px;
     }
-    .google2{
+
+    .google2 {
         width: 150px;
         height: 100px;
     }
+
     .buton {
         display: flex;
         justify-content: center;
@@ -973,20 +1040,22 @@ footer {
 
     }
 
-    .mydiv{
+    .mydiv {
         width: 274px;
         height: 359px;
     }
-    .mydivAbout{
+
+    .mydivAbout {
         width: 274px;
         height: 359px;
     }
-    
-    .mydivProjects{
+
+    .mydivProjects {
         width: 274px;
         height: 359px;
-        background-position-y:-59px ;
+        background-position-y: -59px;
     }
+
     .socialMedia {
         z-index: 30;
         margin-bottom: 5%;
@@ -996,11 +1065,13 @@ footer {
         padding-bottom: 0px;
         padding-right: 137px;
     }
-    .mydivEducation{
+
+    .mydivEducation {
         width: 274px;
         height: 359px;
     }
-    .mydivContact{
+
+    .mydivContact {
         width: 274px;
         height: 359px;
     }
@@ -1046,37 +1117,46 @@ footer {
         width: 366px;
         margin-left: 0px;
     }
-    .mainTittleProjects{
+
+    .mainTittleProjects {
         width: 366px;
-        margin-left: 0px; 
+        margin-left: 0px;
     }
-    .mainTittleEducation{
+
+    .mainTittleEducation {
         width: 366px;
-        margin-left: 0px; 
+        margin-left: 0px;
     }
+
     .mainText {
         margin-left: 0px;
         width: 350px;
     }
-    .mainTextAbout{
+
+    .mainTextAbout {
         margin-left: 0px;
         width: 350px;
     }
-    .mainTextProjects{
+
+    .mainTextProjects {
         margin-left: 0px;
         width: 350px;
     }
-    .mainTextEducation{
+
+    .mainTextEducation {
         margin-left: 0px;
         width: 350px;
     }
-    .mainTextContact{
+
+    .mainTextContact {
         margin-left: 0px;
         width: 350px;
     }
-    .ListProjects{
+
+    .ListProjects {
         margin-left: 85px;
     }
+
     .mainSubtittle {
         margin-left: 0px;
     }
@@ -1084,37 +1164,45 @@ footer {
     .mainSubtittleAbout {
         margin-left: 0px;
     }
-    .mainSubtittleProjects{
+
+    .mainSubtittleProjects {
         margin-left: 0px;
     }
-    .mainSubtittleEducation{
+
+    .mainSubtittleEducation {
         margin-left: 0px;
     }
-    .google1{
+
+    .google1 {
         width: 190px;
         height: 100px;
     }
-    .google2{
+
+    .google2 {
         width: 190px;
         height: 100px;
     }
-    .mydiv{
+
+    .mydiv {
         width: 340px;
         height: 607px;
     }
-    .mydivAbout{
+
+    .mydivAbout {
         width: 340px;
         height: 607px;
     }
-    .mydivProjects{
+
+    .mydivProjects {
         width: 340px;
         height: 607px;
     }
-    .mydivEducation{
+
+    .mydivEducation {
         width: 340px;
         height: 607px;
     }
- 
+
     .socialMedia {
         z-index: 30;
         width: 177px;
@@ -1123,7 +1211,8 @@ footer {
         padding-bottom: 114px;
         padding-right: 30px;
     }
-    .form-contact{
+
+    .form-contact {
         width: 70%;
         height: 490px;
         margin-left: 0;
@@ -1131,26 +1220,30 @@ footer {
         margin-bottom: 50px;
 
     }
-    .mydivContact{
+
+    .mydivContact {
         width: 340px;
         height: 607px;
     }
-    .form-contact h4{
+
+    .form-contact h4 {
         font-size: 14px;
         margin-bottom: 20px;
     }
-    .controls{
+
+    .controls {
         width: 100%;
         height: 70px;
         margin-bottom: 15px;
         font-size: 15px;
-    
+
     }
-    .butons{
+
+    .butons {
         margin-top: 5px;
         font-size: 13px;
         height: 50px;
-    
+
     }
 }
 
@@ -1173,36 +1266,43 @@ footer {
         margin-left: 0px;
         margin-left: 190px;
     }
-    .mainTittleProjects{
+
+    .mainTittleProjects {
         width: 366px;
         margin-left: 0px;
         margin-left: 190px;
     }
-    .mainTittleEducation{
+
+    .mainTittleEducation {
         width: 366px;
         margin-left: 0px;
         margin-left: 190px;
     }
+
     .mainText {
         margin-left: 0px;
         width: 350px;
         margin-left: 190px;
     }
-    .mainTextAbout{
+
+    .mainTextAbout {
         margin-left: 0px;
         width: 350px;
         margin-left: 190px;
     }
-    .mainTextProjects{
+
+    .mainTextProjects {
         margin-left: 0px;
         width: 350px;
         margin-left: 190px;
     }
-    .mainTextEducation{
+
+    .mainTextEducation {
         margin-left: 0px;
         width: 350px;
         margin-left: 190px;
     }
+
     .mainSubtittle {
         margin-left: 190px;
     }
@@ -1210,40 +1310,49 @@ footer {
     .mainSubtittleAbout {
         margin-left: 190px;
     }
-    .mainSubtittleProjects{
+
+    .mainSubtittleProjects {
         margin-left: 190px;
     }
-    .mainSubtittleEducation{
+
+    .mainSubtittleEducation {
         margin-left: 190px;
     }
-    .ListProjects{
+
+    .ListProjects {
         margin-left: 270px;
     }
-    .google1{
+
+    .google1 {
         width: 300px;
         height: 200px;
     }
-    .google2{
+
+    .google2 {
         width: 300px;
         height: 200px;
     }
-    .mydiv{
+
+    .mydiv {
         width: 450px;
         height: 714px
     }
-    .mydivAbout{
+
+    .mydivAbout {
         width: 450px;
         height: 714px;
     }
-    .mydivProjects{
+
+    .mydivProjects {
         width: 450px;
         height: 714px;
     }
-    .mydivEducation{
+
+    .mydivEducation {
         width: 450px;
         height: 714px;
     }
-    
+
     .socialMedia {
         z-index: 30;
         width: 177px;
@@ -1255,32 +1364,37 @@ footer {
     .buton {
         margin-left: 200px;
     }
-    .form-contact{
+
+    .form-contact {
         height: 580px;
         margin-left: 0;
         margin-top: 0;
         margin-bottom: 50px;
 
     }
-    .mydivContact{
+
+    .mydivContact {
         width: 450px;
         height: 714px;
     }
-    .form-contact h4{
+
+    .form-contact h4 {
         font-size: 22px;
         margin-bottom: 20px;
     }
-    .controls{
+
+    .controls {
         width: 100%;
         height: 75px;
         margin-bottom: 15px;
         font-size: 15px;
-    
+
     }
-    .butons{
+
+    .butons {
         margin-top: 5px;
         font-size: 20px;
         height: 80px;
-    
+
     }
 }
