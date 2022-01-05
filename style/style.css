@@ -38,7 +38,13 @@ header {
 .navbar-dark .navbar-nav .nav-link {
     color: #8A8A8A;
 }
-
+.bg-black {
+    height: 100%;
+}
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 a {
     text-decoration: none;
     color: #FEFEFE;
@@ -713,7 +719,9 @@ footer {
         height: 100vh;
         width: 100vw;
     }
-
+    .bg-black {
+        background-color: transparent !important;
+    }
     header {
         display: flex;
         background-color: #212020;
