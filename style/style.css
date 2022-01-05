@@ -722,6 +722,10 @@ footer {
     .bg-black {
         background-color: transparent !important;
     }
+    .navbar-dark .navbar-toggler {
+        color: transparent;
+         border-color:transparent !important ;
+    }
     header {
         display: flex;
         background-color: #212020;
