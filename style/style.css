@@ -175,8 +175,7 @@ footer {
     font-style: normal;
 }
 
-.nav-link,
-.navbar-dark {
+.nav-link, .navbar-dark {
     color: #8A8A8A;
     font-family: poppins;
     font-size: 14px;
@@ -719,17 +718,23 @@ footer {
         height: 100vh;
         width: 100vw;
     }
+
     .bg-black {
         background-color: transparent !important;
     }
+
     .navbar-dark .navbar-toggler {
         color: transparent;
-         border-color:transparent !important ;
+        border-color: transparent !important;
     }
+
     header {
         display: flex;
         background-color: #212020;
         width: 100%;
+    }
+    .nav-link-active{
+        color:#010101
     }
 
     nav {
@@ -1048,8 +1053,8 @@ footer {
         display: grid;
         align-content: center;
         justify-content: space-around;
-        margin-top: 10%;
-
+        margin-bottom: 57px;
+     
     }
 
     .mydiv {
