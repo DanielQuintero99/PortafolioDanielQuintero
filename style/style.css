@@ -31,7 +31,7 @@ header {
 
 .navBarStyle {
   font-size: 14px;
-  font-family: poppins;
+  font-family: fontFamily1;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -83,11 +83,11 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   align-items: end;
-  font-family: Poppins;
+  font-family: poppins;
   font-style: normal;
   font-weight: 300;
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #8A8A8A;
   background-color: #212020;
 }
 

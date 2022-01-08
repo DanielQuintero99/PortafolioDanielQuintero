@@ -3,13 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+// -----PALETA DE COLORES-----
+    $colorBackground1:#010101;
+    $colorBackground2:#212020;
+    $texnavBar:#8A8A8A;
+    $textColorHome:#FEFEFE;
+    $textColorEducation:#001EBA;
+
+// -----FIN PALETA DE COLORES-----
+
+// -----FONTS-----
+$font1: poppins;
+// -----FIN FONTS-----
 
 body {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    background-color: #010101;
+    background-color: $colorBackground1;
 
 }
 
@@ -22,21 +34,21 @@ header {
 }
 
 .bg-light {
-    background-color: #212020 !important;
+    background-color: $colorBackground2 !important;
 }
 
 .navbar-brand {
     font-size: 16px;
-    font-family: poppins;
+    font-family:poppins;
 }
 
 .navBarStyle {
     font-size: 14px;
-    font-family: poppins;
+    font-family: fontFamily1;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #8A8A8A;
+    color: $texnavBar;
 }
 .bg-black {
     height: 100%;
@@ -46,12 +58,12 @@ header {
     padding-bottom: 0;
 }
 .offcanvas-title{
-    color: #010101;
+    color: $colorBackground1;
 }
 a {
     text-decoration: none;
-    color: #FEFEFE;
-    font-family: poppins;
+    color: $textColorHome;
+    font-family: $font1;
 }
 
 
@@ -81,12 +93,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     align-items: end;
-    font-family: Poppins;
+    font-family: $font1;
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #212020;
+    color: $texnavBar;
+    background-color: $colorBackground2;
     }
 
 .rigthFooter {
