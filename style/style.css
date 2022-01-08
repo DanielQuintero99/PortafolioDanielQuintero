@@ -24,6 +24,10 @@ header {
   background-color: #212020 !important;
 }
 
+.bg-black {
+  background-color: #010101 !important;
+}
+
 .navbar-brand {
   font-size: 16px;
   font-family: poppins;
