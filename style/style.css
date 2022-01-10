@@ -132,7 +132,8 @@ footer {
   background-color: #010101;
 }
 
-.nav-link, .navbar-dark {
+.nav-link,
+.navbar-dark {
   color: #8A8A8A;
   font-family: poppins;
   font-size: 16px;

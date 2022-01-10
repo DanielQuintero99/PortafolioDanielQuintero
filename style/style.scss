@@ -1,38 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 // -----PALETA DE COLORES-----
-    $colorBackground1:#010101;
-    $colorBackground2:#212020;
-    $texnavBar:#8A8A8A;
-    $textColorHome:#FEFEFE;
-    $textColorAbout:#9E1010;
-    $textColorEducation:#001EBA;
-    $textColorProjects:#FAFF00;
-    $textColorContact:#EBB1FF;
-    $textSubtittleHome:#CFCFCF;
-    $textSubtittleAbout:#FFA0A0;
-    $textSubtittleProjects:#FAFF00;
-    $textSubtittleEducation:#00b7ff;
-    $descriptionTextProjects:#ff8800;
-    $descriptionTextEducation:#B3B1FF;
-    
+$colorBackground1:#010101;
+$colorBackground2:#212020;
+$texnavBar:#8A8A8A;
+$textColorHome:#FEFEFE;
+$textColorAbout:#9E1010;
+$textColorEducation:#001EBA;
+$textColorProjects:#FAFF00;
+$textColorContact:#EBB1FF;
+$textSubtittleHome:#CFCFCF;
+$textSubtittleAbout:#FFA0A0;
+$textSubtittleProjects:#FAFF00;
+$textSubtittleEducation:#00b7ff;
+$descriptionTextProjects:#ff8800;
+$descriptionTextEducation:#B3B1FF;
+
 
 // -----FIN PALETA DE COLORES-----
 
 // -----FONTS-----
-    $font1: poppins;
+$font1: poppins;
 // -----FIN FONTS-----
 
 // ----- FONT SIZE-----
-    $navBarSize:16px;
-    $tittleSize:50px;
-    $subtittleSize:20px;
-    $textSize:15px;
-    $footerFontSize:10px;
+$navBarSize:16px;
+$tittleSize:50px;
+$subtittleSize:20px;
+$textSize:15px;
+$footerFontSize:10px;
 
 // ----- END FONT SIZE-----
 
@@ -56,32 +58,38 @@ header {
 .bg-light {
     background-color: $colorBackground2 !important;
 }
-.bg-black{
+
+.bg-black {
     background-color: $colorBackground1 !important;
 }
+
 .navbar-brand {
     font-size: $navBarSize;
-    font-family:$font1;
+    font-family: $font1;
 }
 
 .navBarStyle {
     font-size: $navBarSize;
-    font-family:$font1;
+    font-family: $font1;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: $texnavBar;
 }
+
 .bg-black {
     height: 100%;
 }
+
 .navbar {
     padding-top: 0;
     padding-bottom: 0;
 }
-.offcanvas-title{
+
+.offcanvas-title {
     color: $colorBackground1;
 }
+
 a {
     text-decoration: none;
     color: $textColorHome;
@@ -121,7 +129,7 @@ footer {
     font-size: $footerFontSize;
     color: $texnavBar;
     background-color: $colorBackground2;
-    }
+}
 
 .rigthFooter {
     z-index: 10;
@@ -132,7 +140,8 @@ footer {
 
 
 
-.nav-link, .navbar-dark {
+.nav-link,
+.navbar-dark {
     color: $texnavBar;
     font-family: $font1;
     font-size: $navBarSize;
@@ -253,7 +262,7 @@ footer {
     font-style: normal;
     font-weight: 600;
     font-size: $subtittleSize;
-    color:$textSubtittleEducation;
+    color: $textSubtittleEducation;
     margin-left: 121px;
 }
 
@@ -442,6 +451,13 @@ footer {
     align-items: flex-end;
 
 }
+// .offcanvas-start {
+//     top: 20px !important;
+//     left: 20px !important;
+//     width: 334px !important;
+//     height: 787px !important;
+
+// }
 
 .animate-bg:before,
 .animate-bg:after {
@@ -952,7 +968,6 @@ footer {
         align-content: center;
         justify-content: space-around;
         margin-bottom: 57px;
-     
     }
 
     .mydiv {
@@ -1016,16 +1031,19 @@ footer {
     }
 
 }
-@media(max-width:991px){
-    .nav-link-active{
-        color:#010101;
+
+@media(max-width:991px) {
+    .nav-link-active {
+        color: #010101;
     }
+
     .navbar-dark .navbar-toggler {
         color: transparent;
         border-color: transparent !important;
     }
 
 }
+
 /* // Medium devices (tablets, less than 992px) */
 @media (min-width: 769px) {
     .leftContent {
