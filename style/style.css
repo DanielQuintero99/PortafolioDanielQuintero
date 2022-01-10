@@ -327,7 +327,7 @@ footer {
   width: 176px;
   height: 63px;
   border: none;
-  font-family: Poppins;
+  font-family: poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -345,7 +345,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 270px;
-  font-family: Poppins;
+  font-family: poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -396,7 +396,7 @@ footer {
 }
 
 .curriculum {
-  font-family: Poppins;
+  font-family: poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -856,7 +856,7 @@ footer {
   }
   .mainTittleAbout {
     width: 280px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -867,7 +867,7 @@ footer {
   }
   .mainTittleProjects {
     width: 280px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -877,7 +877,7 @@ footer {
   }
   .mainTittleEducation {
     width: 280px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -888,7 +888,7 @@ footer {
   .mainTittleContact {
     width: 280px;
     height: 23px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -898,7 +898,7 @@ footer {
   }
   .mainSubtittle {
     width: 260px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -907,7 +907,7 @@ footer {
   }
   .mainSubtittleAbout {
     width: 260px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -916,7 +916,7 @@ footer {
   }
   .mainSubtittleProjects {
     width: 260px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -925,7 +925,7 @@ footer {
   }
   .mainSubtittleEducation {
     width: 260px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -935,18 +935,17 @@ footer {
   .mainText {
     width: 278px;
     margin-left: 0px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 180.3%;
     text-align: justify;
-    color: #CFCFCF;
   }
   .mainTextAbout {
     width: 278px;
     margin-left: 0px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -956,7 +955,7 @@ footer {
   .mainTextProjects {
     width: 278px;
     margin-left: 0px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -981,7 +980,7 @@ footer {
   .mainTextEducation {
     width: 278px;
     margin-left: 0px;
-    font-family: Poppins;
+    font-family: poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1020,22 +1019,11 @@ footer {
             justify-content: center;
   }
   .portfolio {
-    background-color: #FEFEFE;
-    border-radius: 50px;
-    border: none;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
-    line-height: 27px;
-    color: #010101;
     width: 118px;
     height: 42px;
   }
   .curriculum {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px;
     line-height: 27px;
     background-color: transparent;
