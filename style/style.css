@@ -582,6 +582,7 @@ footer {
   height: 714px;
   background-image: url(../Images/education.jpg);
   background-size: cover;
+  background-position-x: -45px;
   background-repeat: no-repeat;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
