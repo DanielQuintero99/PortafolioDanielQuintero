@@ -40,8 +40,7 @@ $footerFontSize:10px;
 
 // -----MAPSSUBTITTLE-----
 
-$letterColor:(
-    color1: $textColorAbout,
+$letterColor:(color1: $textColorAbout,
     color2: $textColorProjects,
     color3: $textColorEducation,
     color4: $textColorHome,
@@ -54,9 +53,10 @@ $letterColor:(
 
 );
 
-@each $color, $textColor in $letterColor {
+@each $color,
+$textColor in $letterColor {
     .multiColor--#{$color} {
-         color:$textColor;
+        color: $textColor;
     }
 }
 
@@ -1020,6 +1020,7 @@ footer {
     .mydivEducation {
         width: 274px;
         height: 359px;
+        background-position-x:-3px;
     }
 
     .mydivContact {

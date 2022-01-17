@@ -971,6 +971,7 @@ footer {
   .mydivEducation {
     width: 274px;
     height: 359px;
+    background-position-x: -3px;
   }
 
   .mydivContact {
