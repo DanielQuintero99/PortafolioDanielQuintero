@@ -38,6 +38,32 @@ $footerFontSize:10px;
 
 // ----- END FONT SIZE-----
 
+// -----MAPSSUBTITTLE-----
+
+$letterColor:(
+    color1: $textColorAbout,
+    color2: $textColorProjects,
+    color3: $textColorEducation,
+    color4: $textColorHome,
+    color5: $textColorContact,
+    color6: $textSubtittleAbout,
+    color7: $textSubtittleAbout,
+    color8: $descriptionTextEducation,
+    color9: $textSubtittleEducation,
+    color10: $descriptionTextProjects,
+
+);
+
+@each $color, $textColor in $letterColor {
+    .multiColor--#{$color} {
+         color:$textColor;
+    }
+}
+
+
+// ------END MAPS SUBTITTLE------
+
+
 body {
     width: 100vw;
     height: 100vh;

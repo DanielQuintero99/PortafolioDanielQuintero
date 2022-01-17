@@ -6,6 +6,46 @@
           box-sizing: border-box;
 }
 
+.multiColor--color1 {
+  color: #9E1010;
+}
+
+.multiColor--color2 {
+  color: #FAFF00;
+}
+
+.multiColor--color3 {
+  color: #001EBA;
+}
+
+.multiColor--color4 {
+  color: #FEFEFE;
+}
+
+.multiColor--color5 {
+  color: #EBB1FF;
+}
+
+.multiColor--color6 {
+  color: #FFA0A0;
+}
+
+.multiColor--color7 {
+  color: #FFA0A0;
+}
+
+.multiColor--color8 {
+  color: #B3B1FF;
+}
+
+.multiColor--color9 {
+  color: #00b7ff;
+}
+
+.multiColor--color10 {
+  color: #ff8800;
+}
+
 body {
   width: 100vw;
   height: 100vh;
