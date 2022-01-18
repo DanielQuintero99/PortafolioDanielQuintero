@@ -40,7 +40,8 @@ $footerFontSize:10px;
 
 // -----MAPSSUBTITTLE-----
 
-$letterColor:(color1: $textColorAbout,
+$letterColor:(
+    color1: $textColorAbout,
     color2: $textColorProjects,
     color3: $textColorEducation,
     color4: $textColorHome,
@@ -63,10 +64,17 @@ $textColor in $letterColor {
 
 // ------END MAPS SUBTITTLE------
 
+// -----MIXIN------
+    @mixin bodySizes ($width, $height){
+        height: $height;
+        width: $width;
+    }
+        
+// -----END MIXIN-----
+
 
 body {
-    width: 100vw;
-    height: 100vh;
+ @include bodySizes(100vw,100vh);
     display: grid;
     grid-template-columns: repeat(2, 50%);
     background-color: $colorBackground1;
@@ -494,19 +502,8 @@ footer {
 }
 
 .mydivAbout {
-    display: flex;
-    position: relative;
-    margin: 10% auto 0;
-    width: 450px;
-    height: 714px;
+    @extend .mydiv;
     background-image: url(../Images/about.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-position: center;
-
 }
 
 .animate-bgAbout:before,
@@ -524,18 +521,8 @@ footer {
 }
 
 .mydivProjects {
-    display: flex;
-    position: relative;
-    margin: 10% auto 0;
-    width: 450px;
-    height: 714px;
-    background-image: url(../Images/projects.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-
+@extend .mydiv;
+background-image: url(../Images/projects.jpg);
 }
 
 .animate-bgProjects:before,
@@ -553,19 +540,9 @@ footer {
 }
 
 .mydivEducation {
-    display: flex;
-    position: relative;
-    margin: 10% auto 0;
-    width: 450px;
-    height: 714px;
+    @extend .mydiv;
     background-image: url(../Images/education.jpg);
-    background-size: cover;
     background-position-x: -45px;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-
 }
 
 .animate-bgEducation:before,
@@ -583,18 +560,8 @@ footer {
 }
 
 .mydivContact {
-    display: flex;
-    position: relative;
-    margin: 10% auto 0;
-    width: 450px;
-    height: 714px;
-    background-image: url(../Images/contact.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-position: center;
+  @extend .mydiv;
+  background-image: url(../Images/contact.jpg);
 
 }
 

@@ -46,8 +46,8 @@
 }
 
 body {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   background-color: #010101;
@@ -433,7 +433,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-.mydiv {
+.mydiv, .mydivContact, .mydivEducation, .mydivProjects, .mydivAbout {
   display: flex;
   position: relative;
   margin: 10% auto 0;
@@ -463,18 +463,7 @@ footer {
 }
 
 .mydivAbout {
-  display: flex;
-  position: relative;
-  margin: 10% auto 0;
-  width: 450px;
-  height: 714px;
   background-image: url(../Images/about.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  background-position: center;
 }
 
 .animate-bgAbout:before,
@@ -492,17 +481,7 @@ footer {
 }
 
 .mydivProjects {
-  display: flex;
-  position: relative;
-  margin: 10% auto 0;
-  width: 450px;
-  height: 714px;
   background-image: url(../Images/projects.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
 }
 
 .animate-bgProjects:before,
@@ -520,18 +499,8 @@ footer {
 }
 
 .mydivEducation {
-  display: flex;
-  position: relative;
-  margin: 10% auto 0;
-  width: 450px;
-  height: 714px;
   background-image: url(../Images/education.jpg);
-  background-size: cover;
   background-position-x: -45px;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
 }
 
 .animate-bgEducation:before,
@@ -549,18 +518,7 @@ footer {
 }
 
 .mydivContact {
-  display: flex;
-  position: relative;
-  margin: 10% auto 0;
-  width: 450px;
-  height: 714px;
   background-image: url(../Images/contact.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  background-position: center;
 }
 
 .animate-bgContact:before,
@@ -942,7 +900,7 @@ footer {
     margin-bottom: 57px;
   }
 
-  .mydiv {
+  .mydiv, .mydivAbout, .mydivProjects, .mydivEducation, .mydivContact {
     width: 274px;
     height: 359px;
   }
@@ -1094,7 +1052,7 @@ footer {
     height: 100px;
   }
 
-  .mydiv {
+  .mydiv, .mydivAbout, .mydivProjects, .mydivEducation, .mydivContact {
     width: 340px;
     height: 607px;
   }
@@ -1238,7 +1196,7 @@ footer {
     height: 200px;
   }
 
-  .mydiv {
+  .mydiv, .mydivAbout, .mydivProjects, .mydivEducation, .mydivContact {
     width: 450px;
     height: 714px;
   }
