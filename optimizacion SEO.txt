@@ -1,0 +1,10 @@
+Lista de cambios de optimización: 
+•	Compresión de tamaño de imágenes en todas las secciones.
+•	Implementación de etiqueta meta description y keywords en todas las secciones.
+•	Corrección etiqueta tittle.
+•	El sitio esta estructurado de manera jerárquica.
+
+
+El map fue implmentado en el subtitulo del home, para crear el efectro multicolor.
+El mixin fue implementado para definir el tamaño del body
+El extend se incorporo en la aplicacion delos mismos estilos en los bordes de las imagenes en todas las secciones.
