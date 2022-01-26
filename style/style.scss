@@ -78,7 +78,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     background-color: $colorBackground1;
-
+    overflow-x: hidden;
 }
 
 header {

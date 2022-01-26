@@ -51,6 +51,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   background-color: #010101;
+  overflow-x: hidden;
 }
 
 header {
