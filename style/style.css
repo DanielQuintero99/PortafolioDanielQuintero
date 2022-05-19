@@ -122,7 +122,7 @@ a {
   align-items: center;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5%;
+  border-radius: 15px;
   padding: 5%;
   border: solid 1px rgba(0, 0, 0, 0.3);
 }
@@ -139,6 +139,7 @@ a {
   position: relative;
   opacity: 0.9;
   z-index: 15;
+  width: 80%;
 }
 
 #particles-js {
@@ -222,7 +223,6 @@ footer {
   color: #FEFEFE;
   width: 366px;
   height: 70px;
-  margin-left: 121px;
   line-height: 65px;
 }
 
@@ -234,7 +234,6 @@ footer {
   font-size: 50px;
   height: 11px;
   line-height: 65px;
-  margin-left: 121px;
 }
 
 .mainTittleProjects {
@@ -275,7 +274,6 @@ footer {
   font-weight: 600;
   font-size: 20px;
   color: #CFCFCF;
-  margin-left: 121px;
 }
 
 .mainSubtittleAbout {
@@ -286,7 +284,6 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  margin-left: 121px;
 }
 
 .mainSubtittleProjects {
@@ -297,7 +294,6 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  margin-left: 121px;
 }
 
 .mainSubtittleEducation {
@@ -308,11 +304,9 @@ footer {
   font-weight: 600;
   font-size: 20px;
   color: #00b7ff;
-  margin-left: 121px;
 }
 
 .mainText {
-  margin-left: 121px;
   font-family: poppins;
   line-height: 29px;
   font-style: normal;
@@ -335,7 +329,6 @@ footer {
 
 .mainTextProjects {
   color: #ff8800;
-  margin-left: 121px;
   font-family: poppins;
   line-height: 29px;
   font-style: normal;
@@ -347,7 +340,6 @@ footer {
 
 .mainTextEducation {
   color: #B3B1FF;
-  margin-left: 121px;
   font-family: poppins;
   line-height: 29px;
   font-style: normal;
@@ -678,6 +670,10 @@ footer {
     background-color: transparent !important;
   }
 
+  #aboutMeSection {
+    width: 80%;
+  }
+
   header {
     display: flex;
     background-color: #010101;
@@ -753,7 +749,6 @@ footer {
   }
 
   .mainTittleAbout {
-    width: 280px;
     font-family: poppins;
     font-style: normal;
     font-weight: 800;
@@ -1033,11 +1028,6 @@ footer {
     margin-left: 0px;
   }
 
-  .mainTittleAbout {
-    width: 366px;
-    margin-left: 0px;
-  }
-
   .mainTittleProjects {
     width: 366px;
     margin-left: 0px;
@@ -1175,12 +1165,6 @@ footer {
     margin-left: 190px;
   }
 
-  .mainTittleAbout {
-    width: 366px;
-    margin-left: 0px;
-    margin-left: 190px;
-  }
-
   .mainTittleProjects {
     width: 366px;
     margin-left: 0px;
@@ -1202,7 +1186,6 @@ footer {
   .mainTextAbout, .aboutMeFun {
     margin-left: 0px;
     width: 350px;
-    margin-left: 190px;
   }
 
   .mainTextProjects {

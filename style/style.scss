@@ -147,7 +147,7 @@ a {
     align-items: center;
     z-index: 1000;
     background-color: rgb(255, 255, 255,0.3);
-    border-radius: 5%;
+    border-radius: 15px;
     padding: 5%;
     border:solid 1px rgba(0, 0, 0, 0.3);
 }
@@ -163,6 +163,7 @@ a {
     position: relative;
     opacity: 0.9;
     z-index: 15;
+    width: 80%;
 }
 #particles-js{
     width: 100%;
@@ -251,7 +252,7 @@ footer {
     color: $textColorHome;
     width: 366px;
     height: 70px;
-    margin-left: 121px;
+
     line-height: 65px;
 }
 
@@ -263,7 +264,7 @@ footer {
     font-size: $tittleSize;
     height: 11px;
     line-height: 65px;
-    margin-left: 121px;
+
 }
 
 .mainTittleProjects {
@@ -304,7 +305,7 @@ footer {
     font-weight: 600;
     font-size: $subtittleSize;
     color: $textSubtittleHome;
-    margin-left: 121px;
+
 }
 
 .mainSubtittleAbout {
@@ -315,7 +316,7 @@ footer {
     font-style: normal;
     font-weight: 600;
     font-size: $subtittleSize;
-    margin-left: 121px;
+
 }
 
 .mainSubtittleProjects {
@@ -326,7 +327,7 @@ footer {
     font-style: normal;
     font-weight: 600;
     font-size: $subtittleSize;
-    margin-left: 121px;
+
 }
 
 .mainSubtittleEducation {
@@ -337,11 +338,11 @@ footer {
     font-weight: 600;
     font-size: $subtittleSize;
     color: $textSubtittleEducation;
-    margin-left: 121px;
+
 }
 
 .mainText {
-    margin-left: 121px;
+
     font-family: $font1;
     line-height: 29px;
     font-style: normal;
@@ -354,7 +355,7 @@ footer {
 
 .mainTextAbout, .aboutMeFun{
     color: $textSubtittleAbout;
-    // margin-left: 121px;
+    //
     font-family: $font1;
     line-height: 29px;
     font-style: normal;
@@ -366,7 +367,7 @@ footer {
 
 .mainTextProjects {
     color: $descriptionTextProjects;
-    margin-left: 121px;
+
     font-family: $font1;
     line-height: 29px;
     font-style: normal;
@@ -377,7 +378,7 @@ footer {
 }
 .mainTextEducation {
     color: $descriptionTextEducation;
-    margin-left: 121px;
+
     font-family: $font1;
     line-height: 29px;
     font-style: normal;
@@ -722,7 +723,9 @@ background-image: url(../Images/projects.jpg);
         background-color: transparent !important;
     }
 
-
+    #aboutMeSection{
+        width: 80%;
+    }
     header {
         display: flex;
         background-color: $colorBackground1;
@@ -801,7 +804,6 @@ background-image: url(../Images/projects.jpg);
     }
 
     .mainTittleAbout {
-        width: 280px;
         font-family: $font1;
         font-style: normal;
         font-weight: 800;
@@ -1091,11 +1093,6 @@ background-image: url(../Images/projects.jpg);
         margin-left: 0px;
     }
 
-    .mainTittleAbout {
-        width: 366px;
-        margin-left: 0px;
-    }
-
     .mainTittleProjects {
         width: 366px;
         margin-left: 0px;
@@ -1239,11 +1236,6 @@ background-image: url(../Images/projects.jpg);
         margin-left: 190px;
     }
 
-    .mainTittleAbout {
-        width: 366px;
-        margin-left: 0px;
-        margin-left: 190px;
-    }
 
     .mainTittleProjects {
         width: 366px;
@@ -1266,7 +1258,6 @@ background-image: url(../Images/projects.jpg);
     .mainTextAbout, .aboutMeFun {
         margin-left: 0px;
         width: 350px;
-        margin-left: 190px;
     }
 
     .mainTextProjects {
