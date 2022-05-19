@@ -83,10 +83,11 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: repeat(2, 100%);
+    grid-template-columns: repeat(2, 100vw);
     grid-template-rows: 100%;
     grid-column: 1/3;
     grid-row: 1/2;
+    height: 3.5rem;
 }
 
 .bg-light {
@@ -129,8 +130,52 @@ a {
     color: $textColorHome;
     font-family: $font1;
 }
-
-
+.aboutMe{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutMe section{
+    margin-top: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+}
+.aboutMeFun{
+    background-image: url('https://i.gifer.com/YRyO.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(0);
+    text-align: justify;
+    position: relative;
+    opacity: 0.9;
+    z-index: 15;
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+.aboutMeSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    // background-color: #001EBA;
+    width: 50%;
+    height: 50%;
+}
 ul {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -312,15 +357,15 @@ footer {
     text-align: justify;
 }
 
-.mainTextAbout {
+.mainTextAbout, .aboutMeFun{
     color: $textSubtittleAbout;
-    margin-left: 121px;
+    // margin-left: 121px;
     font-family: $font1;
     line-height: 29px;
     font-style: normal;
     font-weight: normal;
     font-size: $textSize;
-    width: 460px;
+    // width: 460px;
     text-align: justify;
 }
 
@@ -335,7 +380,6 @@ footer {
     width: 460px;
     text-align: justify;
 }
-
 .mainTextEducation {
     color: $descriptionTextEducation;
     margin-left: 121px;
@@ -675,7 +719,7 @@ background-image: url(../Images/projects.jpg);
         display: grid;
         grid-template-rows: 1fr 4fr 1fr;
         grid-template-columns: 1fr;
-        height: 100vh;
+        min-height: 100vh;
         width: 100vw;
     }
 
@@ -688,12 +732,19 @@ background-image: url(../Images/projects.jpg);
         display: flex;
         background-color: $colorBackground1;
         width: 100%;
+        height: 3rem;
     }
 
 
     nav {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorBackground1;
         width: 100%;
+        height: 100%;
+        position : fixed;
     }
 
     main {
@@ -851,7 +902,7 @@ background-image: url(../Images/projects.jpg);
         text-align: justify;
     }
 
-    .mainTextAbout {
+    .mainTextAbout, .aboutMeFun {
         width: 278px;
         margin-left: 0px;
         font-family: $font1;
@@ -1065,7 +1116,7 @@ background-image: url(../Images/projects.jpg);
         width: 350px;
     }
 
-    .mainTextAbout {
+    .mainTextAbout, .aboutMeFun{
         margin-left: 0px;
         width: 350px;
     }
@@ -1217,7 +1268,7 @@ background-image: url(../Images/projects.jpg);
         margin-left: 190px;
     }
 
-    .mainTextAbout {
+    .mainTextAbout, .aboutMeFun {
         margin-left: 0px;
         width: 350px;
         margin-left: 190px;
