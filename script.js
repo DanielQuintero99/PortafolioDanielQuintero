@@ -12,6 +12,7 @@ function funParagraph() {
        funText.className = "aboutMeFun";
        funText.innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum porro, saepe sunt assumenda eligendi consectetur nostrum cupiditate eum blanditiis error perspiciatis labore tenetur vero animi, praesentium eius quae dolor dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos corporis molestias repudiandae? Aliquid accusantium fugit iure? Hic, numquam debitis harum totam quod ipsa quae ducimus, iusto similique, commodi eligendi! ";
        particles.setAttribute("class", "particles-js");
+       aboutMeSection.setAttribute("style", "backdrop-filter: blur(5px)");
          music.play();
          music.loop =true;
        handleFun.style.display = "none";
