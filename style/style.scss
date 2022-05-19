@@ -146,6 +146,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
+    background-color: rgb(126, 121, 121);
 }
 .aboutMeFun{
     background-image: url('https://i.gifer.com/YRyO.gif');
@@ -166,16 +167,7 @@ a {
     position: absolute;
     z-index: 10;
 }
-.aboutMeSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 200;
-    // background-color: #001EBA;
-    width: 50%;
-    height: 50%;
-}
+
 ul {
     display: grid;
     grid-template-columns: repeat(2, 50%);

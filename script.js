@@ -7,7 +7,7 @@ function funParagraph() {
    let handleFunOff=document.createElement("button");
     handleFunOff.innerHTML="Off";
    let funText = document.getElementById("funText");
-   const music=new Audio("/images/funTime.m4a");
+   const music=new Audio("/images/funTime.mp3");
    handleFun.addEventListener("click", function() {
        funText.className = "aboutMeFun";
        funText.innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum porro, saepe sunt assumenda eligendi consectetur nostrum cupiditate eum blanditiis error perspiciatis labore tenetur vero animi, praesentium eius quae dolor dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos corporis molestias repudiandae? Aliquid accusantium fugit iure? Hic, numquam debitis harum totam quod ipsa quae ducimus, iusto similique, commodi eligendi! ";
