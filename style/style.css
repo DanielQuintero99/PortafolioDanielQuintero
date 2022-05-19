@@ -121,10 +121,11 @@ a {
   justify-content: space-evenly;
   align-items: center;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   padding: 5%;
   border: solid 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .aboutMeFun {
@@ -149,6 +150,25 @@ a {
   z-index: 10;
 }
 
+.funButon {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 50px;
+  border: 3px solid #FEFEFE;
+  border-radius: 10px;
+  background: #9E1010;
+}
+
+.funButon:hover {
+  animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #9E1010, 0 0 50px #EBB1FF;
+  }
+}
 ul {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -1201,10 +1221,6 @@ footer {
   }
 
   .mainSubtittle {
-    margin-left: 190px;
-  }
-
-  .mainSubtittleAbout {
     margin-left: 190px;
   }
 

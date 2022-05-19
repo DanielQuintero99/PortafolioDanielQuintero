@@ -6,8 +6,9 @@ function funParagraph() {
    let handleFun = document.getElementById("fun");
    let handleFunOff=document.createElement("button");
    let funTitle=document.getElementsByClassName("mainTittleAbout")
-   console.log(funTitle);
-    handleFunOff.innerHTML="Off";
+   let funSubTitle=document.getElementsByClassName("mainSubtittleAbout")
+    handleFunOff.innerHTML="Turn Off";
+    handleFunOff.setAttribute("class","funButon")
    let funText = document.getElementById("funText");
    const music=new Audio("/images/funTime.mp3");
    handleFun.addEventListener("click", function() {
@@ -123,7 +124,8 @@ function funParagraph() {
             "retina_detect": true
           }
     );
-       funTitle[0].innerHTML="Throw yo set up in the sky!!"
+       funTitle[0].innerHTML="Let one fly"
+       funSubTitle[0].innerHTML="We don't die, We multiply Throw yo set up in the sky"
        funText.className = "aboutMeFun";
        funText.innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum porro, saepe sunt assumenda eligendi consectetur nostrum cupiditate eum blanditiis error perspiciatis labore tenetur vero animi, praesentium eius quae dolor dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos corporis molestias repudiandae? Aliquid accusantium fugit iure? Hic, numquam debitis harum totam quod ipsa quae ducimus, iusto similique, commodi eligendi! ";
        particles.setAttribute("class", "particles-jsOn");
@@ -131,11 +133,11 @@ function funParagraph() {
          music.play();
          music.loop =true;
        handleFun.style.display = "none";
-       aboutMeSection.appendChild(handleFunOff);
-       
+       aboutMeSection.appendChild(handleFunOff);     
    })
    handleFunOff.addEventListener("click", function() {
     funTitle[0].innerHTML="About Me";
+    funSubTitle[0].innerHTML="Welcome";
     funText.className = "mainTextAbout";
     funText.innerHTML = `I am Daniel, a developer ready to help you make your dream website come true!
     I am an International Finance professional who found in programming a passion. And with that feeling, I am committed to carry out my work in a detailed and accurate way. `;
