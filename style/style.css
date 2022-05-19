@@ -134,6 +134,7 @@ a {
   background-size: contain;
   background-position: center;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: brightness(0);
   text-align: justify;
