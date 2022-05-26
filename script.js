@@ -1,6 +1,6 @@
 
 funParagraph();
- async function funParagraph() {
+function funParagraph() {
    let aboutMeSection=document.getElementById("aboutMeSection");
    let particles=document.getElementById("particles-js");
    let handleFun = document.getElementById("fun");
@@ -10,7 +10,7 @@ funParagraph();
     handleFunOff.innerHTML="Turn Off";
     handleFunOff.setAttribute("class","funButon")
    let funText = document.getElementById("funText");
-   const music=new Audio("/images/funTime.mp3");
+   const music=document.getElementById("audio");
    handleFun.addEventListener("click", function() {
     particlesJS(
         {
@@ -130,7 +130,7 @@ funParagraph();
        funText.innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum porro, saepe sunt assumenda eligendi consectetur nostrum cupiditate eum blanditiis error perspiciatis labore tenetur vero animi, praesentium eius quae dolor dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos corporis molestias repudiandae? Aliquid accusantium fugit iure? Hic, numquam debitis harum totam quod ipsa quae ducimus, iusto similique, commodi eligendi! ";
        particles.setAttribute("class", "particles-jsOn");
        aboutMeSection.setAttribute("style", "backdrop-filter: blur(5px)");
-         await music.play();
+         music.play();
          music.loop =true;
        handleFun.style.display = "none";
        aboutMeSection.appendChild(handleFunOff);     
