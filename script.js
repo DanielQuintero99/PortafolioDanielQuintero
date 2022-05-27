@@ -78,7 +78,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       }
     ],
-    "image": "url(./projects/daniel-quintero.png)",
+    "image": "url(./projects/daniel-quintero.jpg)",
     "link": "https://danielquintero99.github.io/PortafolioDanielQuintero/",
     "github": "https://github.com/DanielQuintero99/PortafolioDanielQuintero"
   },
@@ -104,7 +104,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       }
     ],
-    "image": "url(../projects/english-valentina.png)",
+    "image": "url(./projects/english-valentina.jpg)",
     "link": "https://danielquintero99.github.io/English-Valentina/",
     "github": "https://github.com/DanielQuintero99/English-Valentina"
   },
@@ -130,7 +130,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       }
     ],
-    "image": "url(../projects/chocberries.png)",
+    "image": "url(./projects/chocberries.jpg)",
     "link": "https://danielquintero99.github.io/ChocBerries/",
     "github": "https://github.com/DanielQuintero99/ChocBerries"
   },
