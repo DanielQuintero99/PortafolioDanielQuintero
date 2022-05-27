@@ -144,7 +144,7 @@ let projects = [{
         "name": "url(./social-media/icons/elementor.webp)"
       },
     ],
-    "image": "url(../images/fuerza-natural.png",
+    "image": "url(../../images/fuerza-natural.png",
     "link": "https://fuerzanaturalcol.com",
     "github": ""
   }
