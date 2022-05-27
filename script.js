@@ -144,7 +144,7 @@ let projects = [{
         "name": "url(./social-media/icons/elementor.webp)"
       },
     ],
-    "image": "url(../../images/fuerza-natural.png)",
+    "image": "images/fuerza-natural.png",
     "link": "https://fuerzanaturalcol.com",
     "github": ""
   }
@@ -161,7 +161,7 @@ function showProjecst() {
     let technologies = project.technologies;
     projectItem.innerHTML =
       `
-    <div class="cardProject" style="background-image:${project.image}">
+    <img class="cardProject" src="${project.image}">
     <div class="cardContent">
       <h3 class="cardTitle">
              ${project.name}
@@ -184,7 +184,7 @@ function showProjecst() {
           <span class="cardLinks" > Repository </span>
         </a>
       </div>
-    </div>
+    </img>
     `
     projectsContainer.appendChild(projectItem);
   })
