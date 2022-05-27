@@ -23,7 +23,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       },
     ],
-    "image": "url(images/TcT-Store-Web-View.png)",
+    "image": "./projects/tct-store-web-view.png",
     "link": "https://tct-store.web.app",
     "github": "https://github.com/DanielQuintero99/appcquintero"
   },
