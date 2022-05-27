@@ -161,7 +161,7 @@ function showProjecst() {
     let technologies = project.technologies;
     projectItem.innerHTML =
       `
-    <div class="cardProject" style="background:${project.image}">
+    <div class="cardProject" style="background-image:${project.image}">
     <div class="cardContent">
       <h3 class="cardTitle">
              ${project.name}
