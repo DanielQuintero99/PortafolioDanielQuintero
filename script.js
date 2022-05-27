@@ -23,7 +23,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       },
     ],
-    "image": "./projects/tct-store-web-view.png",
+    "image": "url(./projects/tct-store-web-view.png)",
     "link": "https://tct-store.web.app",
     "github": "https://github.com/DanielQuintero99/appcquintero"
   },
@@ -49,7 +49,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       }
     ],
-    "image": "url(../images/coupon-simulator.png)",
+    "image": "url(./projects/coupon-simulator.png)",
     "link": "https://danielquintero99.github.io/SimuladorDeCupones/",
     "github": "https://github.com/DanielQuintero99/SimuladorDeCupones"
   },
@@ -78,7 +78,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       }
     ],
-    "image": "url(../images/daniel-quintero.jpg)",
+    "image": "url(./projects/daniel-quintero.png)",
     "link": "https://danielquintero99.github.io/PortafolioDanielQuintero/",
     "github": "https://github.com/DanielQuintero99/PortafolioDanielQuintero"
   },
@@ -104,7 +104,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       }
     ],
-    "image": "url(../images/english-valentina.png)",
+    "image": "url(../projects/english-valentina.png)",
     "link": "https://danielquintero99.github.io/English-Valentina/",
     "github": "https://github.com/DanielQuintero99/English-Valentina"
   },
@@ -130,7 +130,7 @@ let projects = [{
         "name": "url(./social-media/icons/github.png)"
       }
     ],
-    "image": "url(../images/chocberries.png)",
+    "image": "url(../projects/chocberries.png)",
     "link": "https://danielquintero99.github.io/ChocBerries/",
     "github": "https://github.com/DanielQuintero99/ChocBerries"
   },
@@ -144,7 +144,7 @@ let projects = [{
         "name": "url(./social-media/icons/elementor.webp)"
       },
     ],
-    "image": "images/fuerza-natural.png",
+    "image": "url(projects/fuerza-natural.png)",
     "link": "https://fuerzanaturalcol.com",
     "github": ""
   }
@@ -157,11 +157,11 @@ function showProjecst() {
   projects.forEach((project) => {
     let projectItem = document.createElement("div");
     projectItem.setAttribute("class", "cardProject");
-    // projectItem.setAttribute("style","background-image:"+project.image);
+    projectItem.setAttribute("style","background-image:"+project.image);
     let technologies = project.technologies;
     projectItem.innerHTML =
       `
-    <img class="cardProject" src="${project.image}">
+
     <div class="cardContent">
       <h3 class="cardTitle">
              ${project.name}
@@ -184,7 +184,7 @@ function showProjecst() {
           <span class="cardLinks" > Repository </span>
         </a>
       </div>
-    </img>
+
     `
     projectsContainer.appendChild(projectItem);
   })
