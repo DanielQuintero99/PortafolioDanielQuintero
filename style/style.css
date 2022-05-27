@@ -108,7 +108,6 @@ a {
   min-height: 100vh;
   background-color: white;
   display: flex;
-  border-radius: 5%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -170,6 +169,96 @@ a {
     box-shadow: 0 0 25px #9E1010, 0 0 50px #EBB1FF;
   }
 }
+.projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.projectsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardProject {
+  position: relative;
+  width: 426px;
+  height: 220px;
+  color: #000000;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cardContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffee00;
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform 0.25s;
+}
+
+.cardContent::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #ffee00;
+  z-index: -1;
+}
+
+.cardTitle {
+  color: #000000;
+  line-height: 15px;
+}
+
+.cardSubtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.technologies {
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.5s;
+  justify-content: space-evenly;
+}
+
+.cardProject:hover .cardContent {
+  transform: translateY(0);
+}
+
+.cardProject:hover .technologies {
+  opacity: 1;
+  transition: delay 0.25s;
+}
+
+.technologyItem {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
 ul {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -253,7 +342,6 @@ footer {
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
-  height: 11px;
   line-height: 65px;
 }
 
@@ -263,7 +351,6 @@ footer {
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
-  height: 11px;
   line-height: 65px;
 }
 
@@ -273,7 +360,6 @@ footer {
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
-  height: 11px;
   line-height: 65px;
 }
 
@@ -283,7 +369,6 @@ footer {
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
-  height: 11px;
   line-height: 65px;
 }
 
@@ -300,7 +385,6 @@ footer {
 .mainSubtittleAbout {
   color: #FFA0A0;
   width: 254px;
-  height: 20px;
   font-family: poppins;
   font-style: normal;
   font-weight: 600;
@@ -460,6 +544,7 @@ footer {
   align-content: center;
   justify-content: space-around;
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .gridCertificates {
@@ -490,7 +575,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-.mydiv, .mydivContact, .mydivEducation, .mydivProjects, .mydivAbout {
+.mydiv {
   display: flex;
   position: relative;
   margin: 10% auto 0;
@@ -519,79 +604,6 @@ footer {
   animation: BGgradient 10s infinite;
 }
 
-.mydivAbout {
-  background-image: url(../Images/about.png);
-}
-
-.animate-bgAbout:before,
-.animate-bgAbout:after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  top: -3px;
-  background: linear-gradient(120deg, red, white, #f08888);
-  background-size: 300%;
-  width: calc(100% + 6px);
-  height: calc(100% + 3px);
-  z-index: -1;
-  animation: BGgradient 10s infinite;
-}
-
-.mydivProjects {
-  background-image: url(../Images/projects.jpg);
-}
-
-.animate-bgProjects:before,
-.animate-bgProjects:after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  top: -3px;
-  background: linear-gradient(120deg, white, #ffee00, #ff1e1e);
-  background-size: 300%;
-  width: calc(100% + 6px);
-  height: calc(100% + 3px);
-  z-index: -1;
-  animation: BGgradient 10s infinite;
-}
-
-.mydivEducation {
-  background-image: url(../Images/education.jpg);
-  background-position-x: -45px;
-}
-
-.animate-bgEducation:before,
-.animate-bgEducation:after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  top: -3px;
-  background: linear-gradient(120deg, #0400ff, white, #00a2ff);
-  background-size: 300%;
-  width: calc(100% + 6px);
-  height: calc(100% + 3px);
-  z-index: -1;
-  animation: BGgradient 10s infinite;
-}
-
-.mydivContact {
-  background-image: url(../Images/contact.jpg);
-}
-
-.animate-bgContact:before,
-.animate-bgContact:after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  top: -3px;
-  background: linear-gradient(120deg, #ef43ff, white, fuchsia);
-  background-size: 300%;
-  width: calc(100% + 6px);
-  height: calc(100% + 3px);
-  z-index: -1;
-  animation: BGgradient 10s infinite;
-}
-
 @keyframes BGgradient {
   0% {
     background-position: 0% 200%;
@@ -604,22 +616,6 @@ footer {
   }
 }
 .animate-bg:after {
-  filter: blur(15px);
-}
-
-.animate-bgAbout:after {
-  filter: blur(15px);
-}
-
-.animate-bgProjects:after {
-  filter: blur(15px);
-}
-
-.animate-bgEducation:after {
-  filter: blur(15px);
-}
-
-.animate-bgContact:after {
   filter: blur(15px);
 }
 
@@ -967,20 +963,9 @@ footer {
     margin-bottom: 57px;
   }
 
-  .mydiv, .mydivAbout, .mydivProjects, .mydivEducation, .mydivContact {
+  .mydiv {
     width: 274px;
     height: 359px;
-  }
-
-  .mydivAbout {
-    width: 274px;
-    height: 359px;
-  }
-
-  .mydivProjects {
-    width: 274px;
-    height: 359px;
-    background-position-y: -59px;
   }
 
   .socialMedia {
@@ -991,17 +976,6 @@ footer {
     width: 114px;
     padding-bottom: 0px;
     padding-right: 137px;
-  }
-
-  .mydivEducation {
-    width: 274px;
-    height: 359px;
-    background-position-x: -3px;
-  }
-
-  .mydivContact {
-    width: 274px;
-    height: 359px;
   }
 
   .git {
@@ -1114,12 +1088,7 @@ footer {
     height: 100px;
   }
 
-  .mydiv, .mydivAbout, .mydivProjects, .mydivEducation, .mydivContact {
-    width: 340px;
-    height: 607px;
-  }
-
-  .mydivAbout {
+  .mydiv {
     width: 340px;
     height: 607px;
   }
@@ -1247,12 +1216,7 @@ footer {
     height: 200px;
   }
 
-  .mydiv, .mydivAbout, .mydivProjects, .mydivEducation, .mydivContact {
-    width: 450px;
-    height: 714px;
-  }
-
-  .mydivAbout {
+  .mydiv {
     width: 450px;
     height: 714px;
   }

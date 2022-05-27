@@ -1,5 +1,132 @@
-
+let projects=[
+  {
+    "name":"Shiro&Kuro",
+     "description":"E-Comerce",
+    "technologies":[
+      {"name":"url(./social-media/icons/react.png)"},
+      {"name":"url(./social-media/icons/react-router.png)"},
+      {"name":"url(./social-media/icons/bootstrap-react.png)"},
+      {"name":"url(./social-media/icons/bootstrap.png)"},
+      {"name":"url(./social-media/icons/firebase.png)"},
+      {"name":"url(./social-media/icons/git.png"},
+      {"name":"url(./social-media/icons/github.png)"},
+    ],
+    "image":"url(./images/TcT-Store-Web-View.png)",
+    "link":"https://tct-store.web.app",
+    "github":"https://github.com/DanielQuintero99/appcquintero"
+  },
+  {
+    "name":"Coupon Simulator",
+     "description":"E-Comerce",
+    "technologies":[
+      {"name":"url(./social-media/icons/html-5.png)"},
+      {"name":"url(./social-media/icons/css-3.png)"},
+      {"name":"url(./social-media/icons/js.png)"},
+      {"name":"url(./social-media/icons/bootstrap.png)"},
+      {"name":"url(./social-media/icons/git.png)"},
+      {"name":"url(./social-media/icons/github.png)"}
+    ],
+    "image":"url(./images/coupon-simulator.png)",
+    "link":"https://danielquintero99.github.io/SimuladorDeCupones/",
+    "github":"https://github.com/DanielQuintero99/SimuladorDeCupones"
+  },
+  {
+    "name":"Daniel Quintero",
+     "description":"Personal Website",
+    "technologies":[
+      {"name":"url(./social-media/icons/html-5.png)"},
+      {"name":"url(./social-media/icons/css-3.png)"},
+      {"name":"url(./social-media/icons/js.png)"},
+      {"name":"url(./social-media/icons/sass.png)"},
+      {"name":"url(./social-media/icons/bootstrap.png)"},
+      {"name":"url(./social-media/icons/git.png)"},
+      {"name":"url(./social-media/icons/github.png)"}
+    ],
+    "image":"url(./images/daniel-quintero.png)",
+    "link":"https://danielquintero99.github.io/PortafolioDanielQuintero/",
+    "github":"https://github.com/DanielQuintero99/PortafolioDanielQuintero"
+  },
+  {
+    "name":"English Valentina",
+     "description":"Language Learning",
+    "technologies":[
+      {"name":"url(./social-media/icons/html-5.png)"},
+      {"name":"url(./social-media/icons/css-3.png)"},
+      {"name":"url(./social-media/icons/sass.png)"},
+      {"name":"url(./social-media/icons/bootstrap.png)"},
+      {"name":"url(./social-media/icons/git.png)"},
+      {"name":"url(./social-media/icons/github.png)"}
+    ],
+    "image":"url(./images/english-valentina.png)",
+    "link":"https://danielquintero99.github.io/English-Valentina/",
+    "github":"https://github.com/DanielQuintero99/English-Valentina"
+  },
+  {
+    "name":"ChocBerries",
+     "description":"Landing Page",
+    "technologies":[
+      {"name":"url(./social-media/icons/html-5.png)"},
+      {"name":"url(./social-media/icons/css-3.png)"},
+      {"name":"url(./social-media/icons/sass.png)"},
+      {"name":"url(./social-media/icons/bootstrap.png)"},
+      {"name":"url(./social-media/icons/git.png)"},
+      {"name":"url(./social-media/icons/github.png)"}
+    ],
+    "image":"url(./images/chocberries.png)",
+    "link":"https://danielquintero99.github.io/ChocBerries/",
+    "github":"https://github.com/DanielQuintero99/ChocBerries"
+  },
+  {
+    "name":"Fuerza Natural",
+     "description":"Landing Page",
+    "technologies":[
+      {"name":"url(./social-media/icons/wordpress.png)"},
+      {"name":"url(./social-media/icons/elementor.webp)"},
+    ],
+    "image":"url(./images/fuerza-natural.png)",
+    "link":"https://fuerzanaturalcol.com",
+    "github":""
+  }
+]
 funParagraph();
+showProjecst()
+function showProjecst(){
+  let projectsContainer=document.getElementById("projectsContainer");
+  projects.forEach((project)=>{
+    let projectItem=document.createElement("div");
+    projectItem.setAttribute("class","cardProject");
+    projectItem.setAttribute("style","background-image:"+project.image);
+    let technologies=project.technologies;
+    projectItem.innerHTML=
+    `
+    <div class="cardContent">
+      <h3 class="cardTitle">
+             ${project.name}
+          </h3>
+          <span class="cardSubtitle">${project.description}</span>
+          <div class="technologies">
+            ${technologies.map((technology)=>{
+              let technologyItem=document.createElement("div");
+              technologyItem.setAttribute("class","technologyItem");
+              technologyItem.setAttribute("style","background-image:"+technology.name);
+              return technologyItem.outerHTML;
+            }).join("")}
+
+         </div>
+          <a href=${project.link} class="cardDescription">
+            <span class="cardLinks" > Go </span>
+          </a>
+          <a class="cardDescription">
+          <br>
+          <span class="cardLinks" > Repository </span>
+        </a>
+      </div>
+ 
+    `
+    projectsContainer.appendChild(projectItem);
+  })
+
+}
 function funParagraph() {
    let aboutMeSection=document.getElementById("aboutMeSection");
    let particles=document.getElementById("particles-js");
