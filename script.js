@@ -42,7 +42,7 @@ let projects=[
       {"name":"url(./social-media/icons/git.png)"},
       {"name":"url(./social-media/icons/github.png)"}
     ],
-    "image":"url(../images/daniel-quintero.png)",
+    "image":"url(../images/daniel-quintero.jpg)",
     "link":"https://danielquintero99.github.io/PortafolioDanielQuintero/",
     "github":"https://github.com/DanielQuintero99/PortafolioDanielQuintero"
   },
