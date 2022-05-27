@@ -11,7 +11,7 @@ let projects=[
       {"name":"url(./social-media/icons/git.png"},
       {"name":"url(./social-media/icons/github.png)"},
     ],
-    "image":"url(./images/TcT-Store-Web-View.png)",
+    "image":"url(images/TcT-Store-Web-View.png)",
     "link":"https://tct-store.web.app",
     "github":"https://github.com/DanielQuintero99/appcquintero"
   },
@@ -26,7 +26,7 @@ let projects=[
       {"name":"url(./social-media/icons/git.png)"},
       {"name":"url(./social-media/icons/github.png)"}
     ],
-    "image":"url(./images/coupon-simulator.png)",
+    "image":"url(images/coupon-simulator.png)",
     "link":"https://danielquintero99.github.io/SimuladorDeCupones/",
     "github":"https://github.com/DanielQuintero99/SimuladorDeCupones"
   },
@@ -42,7 +42,7 @@ let projects=[
       {"name":"url(./social-media/icons/git.png)"},
       {"name":"url(./social-media/icons/github.png)"}
     ],
-    "image":"url(./images/daniel-quintero.png)",
+    "image":"url(images/daniel-quintero.png)",
     "link":"https://danielquintero99.github.io/PortafolioDanielQuintero/",
     "github":"https://github.com/DanielQuintero99/PortafolioDanielQuintero"
   },
@@ -57,7 +57,7 @@ let projects=[
       {"name":"url(./social-media/icons/git.png)"},
       {"name":"url(./social-media/icons/github.png)"}
     ],
-    "image":"url(./images/english-valentina.png)",
+    "image":"url(images/english-valentina.png)",
     "link":"https://danielquintero99.github.io/English-Valentina/",
     "github":"https://github.com/DanielQuintero99/English-Valentina"
   },
@@ -72,7 +72,7 @@ let projects=[
       {"name":"url(./social-media/icons/git.png)"},
       {"name":"url(./social-media/icons/github.png)"}
     ],
-    "image":"url(./images/chocberries.png)",
+    "image":"url(images/chocberries.png)",
     "link":"https://danielquintero99.github.io/ChocBerries/",
     "github":"https://github.com/DanielQuintero99/ChocBerries"
   },
@@ -83,7 +83,7 @@ let projects=[
       {"name":"url(./social-media/icons/wordpress.png)"},
       {"name":"url(./social-media/icons/elementor.webp)"},
     ],
-    "image":"url(./images/fuerza-natural.png)",
+    "image":"url(images/fuerza-natural.png)",
     "link":"https://fuerzanaturalcol.com",
     "github":""
   }
