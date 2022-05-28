@@ -193,7 +193,7 @@ let certification=[{
 funParagraph();
 showProjecst();
 showEducation();
-
+window.addEventListener("scroll", toggleNavBarColor)
 function showProjecst() {
   let projectsContainer = document.getElementById("projectsContainer");
   projects.forEach((project) => {
@@ -399,5 +399,13 @@ function showEducation(){
   })
 }
 function toggleNavBarColor(){
-  let navBar= document.getElementsByClassName("bg-black");
+  let scrollTop=document.documentElement.scrollTop;
+  let navBar = document.getElementById("navBarColor");
+  if(scrollTop>700){
+    navBar.classList.add("bg-light");
+    navBar.classList.remove("bg-black");
+  }else{
+    navBar.classList.remove("bg-light");
+    navBar.classList.add("bg-black");
+  }
 }
