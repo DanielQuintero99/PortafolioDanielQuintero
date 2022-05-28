@@ -149,8 +149,50 @@ let projects = [{
     "github": ""
   }
 ]
+let certification=[{
+    "institute": "Google Activate",
+    "title": "Web Development I",
+    "date": "2021",
+    "id": "K7P 88Q ZMW",
+    "link":"https://learndigital.withgoogle.com/activate/validate-certificate-code",
+    "image":"./certificates/certificado-google-html-1.jpg"
+},
+{
+    "institute": "Google Activate",
+    "title": "Web Development II",
+    "date": "2021",
+    "id": "4R7 95J QYY",
+    "link":"https://learndigital.withgoogle.com/activate/validate-certificate-code",
+    "image":"./certificates/certificado-google-html-2.jpg"
+  },
+  {
+    "institute": "CoderHouse",
+    "title": "Web Development",
+    "date": "2022",
+    "id": "61faf647af37d0002ebba9a7",
+    "link":"https://www.coderhouse.com.co/certificados/61faf647af37d0002ebba9a6",
+    "image":"./certificates/coder-desarrollo-web.png"
+  },
+  {
+    "institute": "CoderHouse",
+    "title": "JavaScript",
+    "date": "2022",
+    "id": "625584ff5e713500199f07cb",
+    "link":"https://www.coderhouse.com.co/certificados/625584ff5e713500199f07ca",
+    "image":"./certificates/coder-javascript.png"
+  },
+  {
+    "institute": "CoderHouse",
+    "title": "React",
+    "date": "Im waiting for the certificate, I hope get it soon.",
+    "id": "undefined",
+    "link":"#",
+    "image":"./certificates/404.jpg"
+  }
+]
 funParagraph();
-showProjecst()
+showProjecst();
+showEducation();
 
 function showProjecst() {
   let projectsContainer = document.getElementById("projectsContainer");
@@ -334,4 +376,28 @@ function funParagraph() {
     aboutMeSection.removeChild(handleFunOff);
     music.pause();
   })
+}
+
+function showEducation(){
+  let educationContainer = document.getElementById("educationContainer");
+  certification.forEach(function(certification){
+    let certificationItem = document.createElement("div");
+    certificationItem.setAttribute("class", "box");
+    certificationItem.innerHTML = 
+    `
+    <span></span>
+    <div class="content">
+      <h2>${certification.institute}</h2>
+      <h3>${certification.title}</h3>
+     <img class="img-fluid" src="${certification.image}" alt="">
+     <p>Id: ${certification.id}</p>
+     <p>${certification.date}</p>
+      <a target="_blank" href="${certification.link}">Check</a>
+    </div>
+    `;
+    educationContainer.appendChild(certificationItem);
+  })
+}
+function toggleNavBarColor(){
+  let navBar= document.getElementsByClassName("bg-black");
 }
