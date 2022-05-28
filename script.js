@@ -401,7 +401,7 @@ function showEducation(){
 function toggleNavBarColor(){
   let scrollTop=document.documentElement.scrollTop;
   let navBar = document.getElementById("navBarColor");
-  if(scrollTop>700){
+  if(scrollTop>900){
     navBar.classList.add("bg-light");
     navBar.classList.remove("bg-black");
   }else{

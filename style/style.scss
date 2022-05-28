@@ -519,29 +519,13 @@ main {
 }
 
 footer {
-    z-index: 10;
-    grid-column: 1/3;
     grid-row: 3/4;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    align-items: end;
     font-family: $font1;
     font-style: normal;
     font-weight: 300;
     font-size: $footerFontSize;
     color: $texnavBar;
-    background-color: $colorBackground2;
 }
-
-.rigthFooter {
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background-color: $colorBackground1;
-}
-
-
 
 .nav-link,
 .navbar-dark {
@@ -987,26 +971,13 @@ footer {
     }
 
     footer {
-        display: grid;
-        z-index: -4;
-        width: 100%;
-        grid-column: 1/2;
-        grid-row: 3/4;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
         align-items: end;
         font-family: $font1;
         font-style: normal;
         font-weight: 300;
         font-size: $footerFontSize;
         color: rgba(255, 255, 255, 0.5);
-        background-color: $colorBackground1;
     }
-
-    .rigthFooter {
-        display: none;
-    }
-
     .leftContent {
         display: flex;
         flex-direction: column;
