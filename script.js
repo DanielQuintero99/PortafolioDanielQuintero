@@ -184,6 +184,14 @@ let certification=[{
   {
     "institute": "CoderHouse",
     "title": "React",
+    "date": "2022",
+    "id": "6298530da5b962001a27ce25",
+    "link":"https://www.coderhouse.com.co/certificados/6298530da5b962001a27ce24",
+    "image":"./certificates/coder-react.png"
+  },
+  {
+    "institute": "CoderHouse",
+    "title": "React Native",
     "date": "Im waiting for the certificate, I hope get it soon.",
     "id": "undefined",
     "link":"#",
